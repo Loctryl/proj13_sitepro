@@ -1,0 +1,17 @@
+@font-face {
+    font-family: BigNoodleTitling;
+    src: url(../../../../public/big_noodle_titling.ttf);
+}
+
+body {
+    font-family: BigNoodleTitling;
+    color: black;
+}
+
+.Nav {
+    display: inline;
+}
+
+.left {
+    display: flex;
+}

@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "teams",
+  "info": {
+    "singularName": "team",
+    "pluralName": "teams",
+    "displayName": "team",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "game": {
+      "type": "string",
+      "required": true
+    },
+    "players": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::player.player"
+    },
+    "coach": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::player.player",
+      "inversedBy": "names"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}
