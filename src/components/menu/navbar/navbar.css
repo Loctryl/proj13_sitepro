@@ -1,17 +1,19 @@
 @font-face {
     font-family: BigNoodleTitling;
-    src: url(../../../../public/big_noodle_titling.ttf);
+    src: url(http://localhost:1337/uploads/big_noodle_titling_f192dce92e.ttf?updated_at=2022-04-12T14:14:51.076Z);
 }
 
-body {
+.TitleFont {
     font-family: BigNoodleTitling;
     color: black;
+    font-size: 2rem;
 }
 
-.Nav {
-    display: inline;
+.logoNav {
+    height: 5rem;
+    width: auto;
 }
 
-.left {
-    display: flex;
+.test {
+    padding-left: 500px;
 }
