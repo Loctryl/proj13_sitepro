@@ -1,3 +1,8 @@
+body{
+    background-image: url('../../../public/assets/Stream asset/Fond.png');
+    background-position: fixed;
+}
+
 h1 {
     text-align: center;
     color: black;

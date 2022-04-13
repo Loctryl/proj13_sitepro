@@ -1,11 +1,8 @@
-@font-face {
+/*@font-face {
     font-family: BigNoodleTitling;
     src: url("../../../database/public/uploads/big_noodle_titling_f192dce92e.ttf");
-}
+}*/
 
-.marginNav {
-    margin-top: 4vw;
-}
 
 .SetNavBar {
     font-family: 'BigNoodleTitling';
