@@ -1,0 +1,37 @@
+:root {
+  --blue1: #126782;
+}
+
+a { 
+  text-decoration: none !important;
+}
+
+.card {
+  border-radius: 30px;
+  margin: 2.5rem;
+}
+
+.card:hover{
+  transition: 0.2s;
+  border: 1px solid var(--blue1);
+  box-shadow: 3px 3px 3px #000;
+}
+
+.title {
+  color: #000;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.title:hover{
+  transition: 0.4s;
+  color: var(--blue1);
+}
+
+.image {
+  width: 100%;
+  height: 30vh;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}

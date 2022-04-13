@@ -1,23 +1,22 @@
 @font-face {
     font-family: BigNoodleTitling;
-    src: url(../../../database/public/uploads/big_noodle_titling_f192dce92e.ttf);
+    src: url("../../../database/public/uploads/big_noodle_titling_f192dce92e.ttf");
 }
 
-.marginNav {
-    margin-top: 4vw;
+.nav-link {
+    color: black !important;
 }
 
 .SetNavBar {
     font-family: 'BigNoodleTitling';
-    font-size: 2.5vw;
-    color: black !important;
-    letter-spacing: 0.5vw;
+    font-size: 2vw;
+    letter-spacing: 0.4vw;
     text-transform: uppercase;
-    /*background-image: url("../database/public/uploads/Logo_Colored_PNG_529f0a5229.png");*/
-    background-position: 10%;
-    background-size: 7vw;
+    background-image: url("../../../database/public/uploads/Logo_Colored_PNG_529f0a5229.png");
+    background-position: 8%;
+    background-size: 5.7vw;
     background-repeat: no-repeat;
-    height: 7vw;
+    height: 5.7vw;
     margin-left: auto;
     margin-right: auto;
     justify-content: center !important;
@@ -25,8 +24,8 @@
 
 .line {
     height: 0.3vw;
-    width: 60%;
-    margin-left: 20%;
-    margin-right: 20%;
+    width: 55%;
+    margin-left: 22.5%;
+    margin-right: 22.5%;
     background-color: #135066;
 }

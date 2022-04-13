@@ -7,6 +7,7 @@ import NavBar from '../components/menu/navbar.js';
 function Home(props) {
   return (
     <>
+      <NavBar />
       <Row><Col xs={12} md={12}><h1>ALKYA</h1></Col></Row>
       <Row><Col xs={{ span: 10, offset: 1 }} md={{ span: 10, offset: 1 }}>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
@@ -20,11 +21,11 @@ function Home(props) {
         <Col xs={{ span: 2, offset: 1 }} md={{ span: 2, offset: 1 }}>
           <img src="/equipeacc.png" className='img-fluid rounded-circle' alt="" /></Col>
         <Col xs={{ span: 2, offset: 1 }} md={{ span: 2, offset: 1 }}>
-           <img src="/equipeacc.png" className='img-fluid rounded-circle' alt="" /></Col>
+          <img src="/equipeacc.png" className='img-fluid rounded-circle' alt="" /></Col>
       </Row>
       <br />
       <Row><Col xs={{ span: 10, offset: 1 }} md={{ span: 10, offset: 1 }}>
-        <Carousel   interval={null} fade={true}>
+        <Carousel interval={null} fade={true}>
           <Carousel.Item>
             <img
               className="d-block w-100 img-fluid  customImg"
