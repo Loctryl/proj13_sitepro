@@ -3,17 +3,26 @@
     src: url(http://localhost:1337/uploads/big_noodle_titling_f192dce92e.ttf?updated_at=2022-04-12T14:14:51.076Z);
 }
 
-.TitleFont {
-    font-family: BigNoodleTitling;
+
+
+.navBar {
+    font-family: 'BigNoodleTitling';
+    font-size: 1.75rem;
+    letter-spacing: 0.3rem;
     color: black;
-    font-size: 2rem;
-}
-
-.logoNav {
+    text-transform: uppercase;
+    background-image: url("../../../../database/public/uploads/Logo_Colored_PNG_529f0a5229.png");
+    background-position: 3%;
+    background-size: 8%;
+    background-repeat: no-repeat;
     height: 5rem;
-    width: auto;
+    font-display: flex;
+    margin-top: 3rem;
+    margin-left: 2rem;
 }
 
-.test {
-    padding-left: 500px;
+.border {
+    border-bottom: solid;
+    border-bottom: 1rem;
+    border-color: #135066;
 }
