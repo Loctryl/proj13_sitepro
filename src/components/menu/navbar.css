@@ -3,18 +3,20 @@
     src: url("../../../database/public/uploads/big_noodle_titling_f192dce92e.ttf");
 }*/
 
+.nav-link {
+    color: black !important;
+}
 
 .SetNavBar {
     font-family: 'BigNoodleTitling';
     font-size: 2vw;
-    color: black !important;
-    letter-spacing: 0.5vw;
+    letter-spacing: 0.4vw;
     text-transform: uppercase;
     background-image: url("../../../database/public/uploads/Logo_Colored_PNG_529f0a5229.png");
-    background-position: 10%;
-    background-size: 7vw;
+    background-position: 8%;
+    background-size: 5.7vw;
     background-repeat: no-repeat;
-    height: 7vw;
+    height: 5.7vw;
     margin-left: auto;
     margin-right: auto;
     justify-content: center !important;

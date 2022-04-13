@@ -1,6 +1,8 @@
-body{
-    background-image: url('../../../public/assets/Stream asset/Fond.png');
+body {
+    background-image: url("../../../database/public/uploads/Fond_df4fc7d404.png");
+    background-repeat: no-repeat;
     background-position: fixed;
+    background-size: cover;
 }
 
 h1 {
