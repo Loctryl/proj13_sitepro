@@ -2,7 +2,15 @@ import logo from './logo.svg';
 import {React, Component} from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import NavBar from './components/menu/navbar/navbar';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import News from './pages/news';
+import AboutUs from './pages/aboutus';
+import MainTeam from './pages/mainteam';
+import Player from './pages/player';
+import Team from './pages/team';
+import Shop from './pages/shop';
+import MainNews from './pages/mainnews';
+import Home from './pages/home';
 
 class App extends Component {
 
@@ -42,25 +50,21 @@ class App extends Component {
     this.setState({teams:datas, loading:false})
   }
 
-  render() {
+  render(){
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
+      <Router>
+        <Routes>
+          <Route exact path='/' element={<Home/>}/>
+          <Route exact path='/mainnews' element={<MainNews/>}/>
+          <Route exact path='/mainnews/news' element={<News/>}/>
+          <Route exact path='/aboutus' element={<AboutUs/>}/>
+          <Route exact path='/mainteam' element={<MainTeam/>}/>
+          <Route exact path='/mainteam/team/player' element={<Player/>}/>
+          <Route exact path='/mainteam/team' element={<Team/>}/>
+          <Route exact path='/shop' element={<Shop/>}/>
+        </Routes>
+      </Router>
+    )
   }
 }
 
