@@ -1,5 +1,4 @@
 import { React, Component } from 'react';
-import { Container } from 'react-bootstrap';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from './components/menu/footer/footer.js'
@@ -45,10 +44,9 @@ class App extends Component {
 
   render() {
     return (
-      <>
-        <NavBar/>
-        <Footer/>
-      </>
+      <div className="App">
+        <NavBar />
+      </div>
     );
   }
 }
