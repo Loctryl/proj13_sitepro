@@ -1,6 +1,8 @@
 import logo from './logo.svg';
 import {React, Component} from 'react';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import NavBar from './components/menu/navbar/navbar';
 
 class App extends Component {
 
