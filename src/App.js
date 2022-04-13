@@ -1,8 +1,15 @@
 import { React, Component } from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Footer from './components/menu/footer/footer.js'
-import NavBar from './components/menu/navbar/navbar.js'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import News from './pages/news';
+import AboutUs from './pages/aboutus';
+import MainTeam from './pages/mainteam';
+import Player from './pages/player';
+import Team from './pages/team';
+import Shop from './pages/shop';
+import MainNews from './pages/mainnews';
+import Home from './pages/home';
 
 class App extends Component {
 
@@ -42,12 +49,21 @@ class App extends Component {
     this.setState({ teams: datas, loading: false })
   }
 
-  render() {
+  render(){
     return (
-      <div className="App">
-        <NavBar />
-      </div>
-    );
+      <Router>
+        <Routes>
+          <Route exact path='/' element={<Home/>}/>
+          <Route exact path='/mainnews' element={<MainNews/>}/>
+          <Route exact path='/mainnews/news' element={<News/>}/>
+          <Route exact path='/aboutus' element={<AboutUs/>}/>
+          <Route exact path='/mainteam' element={<MainTeam/>}/>
+          <Route exact path='/mainteam/team/player' element={<Player/>}/>
+          <Route exact path='/mainteam/team' element={<Team/>}/>
+          <Route exact path='/shop' element={<Shop/>}/>
+        </Routes>
+      </Router>
+    )
   }
 }
 

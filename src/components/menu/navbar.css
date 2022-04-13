@@ -13,7 +13,7 @@
     color: black !important;
     letter-spacing: 0.5vw;
     text-transform: uppercase;
-    background-image: url("../../../../database/public/uploads/Logo_Colored_PNG_529f0a5229.png");
+    /*background-image: url("../database/public/uploads/Logo_Colored_PNG_529f0a5229.png");*/
     background-position: 10%;
     background-size: 7vw;
     background-repeat: no-repeat;
