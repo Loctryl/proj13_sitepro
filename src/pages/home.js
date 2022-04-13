@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import "./style/home.css"
 import { Col, Row, Carousel } from 'react-bootstrap';
+import Footer from '../components/menu/footer.js'
+import NavBar from '../components/menu/navbar.js';
 
 function Home(props) {
-  console.log(props);
   return (
     <>
       <Row><Col xs={12} md={12}><h1>ALKYA</h1></Col></Row>
@@ -55,6 +56,7 @@ function Home(props) {
         </Carousel>
       </Col>
     </Row>
+    <Footer/>
   </>
   );
 }
