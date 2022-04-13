@@ -1,0 +1,8 @@
+h1 {
+    text-align: center;
+    color: black;
+}
+.customImg{
+    height: 50vh !important;
+    border-radius: 25px;
+}
