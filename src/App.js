@@ -25,28 +25,37 @@ class App extends Component {
   }
 
   componentDidMount = async () => {
-    let datas = null
-    let reponse = null
+    let 
+      reponse = null,
+      fetchNews = null,
+      fetchPartners = null,
+      fetchPlayers = null,
+      fetchSponsors = null,
+      fetchTeams = null
+    ;
 
     reponse = await fetch('http://localhost:1337/api/news', { method: 'GET', headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' } })
-    datas = await reponse.json()
-    this.setState({ news: datas, loading: false })
+    fetchNews = await reponse.json()
 
     reponse = await fetch('http://localhost:1337/api/partners', { method: 'GET', headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' } })
-    datas = await reponse.json()
-    this.setState({ partners: datas, loading: false })
+    fetchPartners = await reponse.json()
 
     reponse = await fetch('http://localhost:1337/api/players', { method: 'GET', headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' } })
-    datas = await reponse.json()
-    this.setState({ players: datas, loading: false })
+    fetchPlayers = await reponse.json()
 
     reponse = await fetch('http://localhost:1337/api/sponsors', { method: 'GET', headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' } })
-    datas = await reponse.json()
-    this.setState({ sponsors: datas, loading: false })
+    fetchSponsors = await reponse.json()
 
     reponse = await fetch('http://localhost:1337/api/teams', { method: 'GET', headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' } })
-    datas = await reponse.json()
-    this.setState({ teams: datas, loading: false })
+    fetchTeams = await reponse.json()
+
+    this.setState({ 
+      news: fetchNews, 
+      partners: fetchPartners, 
+      players: fetchPlayers,
+      sponsors: fetchSponsors,
+      teams: fetchTeams, 
+      loading: false })
   }
 
   render(){
