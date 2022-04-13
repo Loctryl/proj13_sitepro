@@ -3,7 +3,8 @@
     src: url("../../../database/public/uploads/big_noodle_titling_f192dce92e.ttf");
 }
 
-.nav-link {
+a {
+    text-decoration: none !important;
     color: black !important;
 }
 
