@@ -1,10 +1,28 @@
 @font-face {
     font-family: BigNoodleTitling;
-    src: url("../../../../database/public/uploads/big_noodle_titling_f192dce92e.ttf");
+    src: url("../../../../database/public/uploads/big_noodle_titling.ttf");
+}
+
+body {
+    text-align: center;
+    text-transform: uppercase;
 }
 
 h1 {
     font-family: 'BigNoodleTitling';
-    text-align: center;
-    text-transform: uppercase;
+    font-size: 4vw;
+}
+
+p {
+    font-family: 'Roboto';
+    font-size: 1.75vw;
+}
+
+.marginStaff {
+    margin-top: 1.5vw;
+    margin-bottom: 1.5vw;
+}
+
+.imageStaff {
+    border-radius: 50px;
 }

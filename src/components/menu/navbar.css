@@ -1,6 +1,10 @@
 @font-face {
     font-family: BigNoodleTitling;
-    src: url("../../../database/public/uploads/big_noodle_titling_f192dce92e.ttf");
+    src: url("../../../database/public/uploads/big_noodle_titling.ttf");
+}
+
+.marginNav {
+    margin-top: 2vw;
 }
 
 a {
@@ -15,7 +19,7 @@ a {
     text-transform: uppercase;
     background-image: url("../../../database/public/uploads/Logo_Colored_PNG_529f0a5229.png");
     background-position: 8%;
-    background-size: 5.7vw;
+    background-size: 5.5vw;
     background-repeat: no-repeat;
     height: 5.7vw;
     margin-left: auto;
@@ -25,8 +29,8 @@ a {
 
 .line {
     height: 0.3vw;
-    width: 55%;
-    margin-left: 22.5%;
-    margin-right: 22.5%;
+    width: 45%;
+    margin-left: 27.5%;
+    margin-right: 27.5%;
     background-color: #135066;
 }

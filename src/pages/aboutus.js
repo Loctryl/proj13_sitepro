@@ -1,4 +1,5 @@
 import NavBar from "../components/menu/navbar";
+import TilesStaff from "../components/tiles/tilesstaff";
 import "./style/aboutus.css";
 
 function AboutUs(props){
@@ -6,7 +7,7 @@ function AboutUs(props){
     return (
       <>
       <NavBar />
-    Amongus
+      <TilesStaff />
       </>
     )
   }
