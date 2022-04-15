@@ -35,8 +35,8 @@ class App extends Component {
     ;
 
     reponse = await fetch('http://localhost:1337/api/news?populate=*', { method: 'GET', headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' } })
-    datas = await reponse.json()
-    this.setState({ news: datas, loading: false })
+    fetchNews = await reponse.json()
+    this.setState({ news: fetchNews, loading: false })
 
     reponse = await fetch('http://localhost:1337/api/partners', { method: 'GET', headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' } })
     fetchPartners = await reponse.json()
