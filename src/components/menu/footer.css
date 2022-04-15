@@ -1,7 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,700&display=swap');
 
 footer {
+  border-top: 3px solid rgb(164, 164, 164);
+  padding-top: 2vh;
+  background-color: white;
+  position: sticky;
+}
+
+.footerCol{
+  text-align: center;
+}
+
+h3 {
   font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+} 
+
+svg {
+  padding: 15px;
+  vertical-align: center;
+} 
+
+img {
+  width: 25%;
 }
 
 .margin {
