@@ -1,21 +1,11 @@
-/*@font-face {
+@font-face {
     font-family: BigNoodleTitling;
     src: url("../../../../database/public/uploads/big_noodle_titling.ttf");
-}*/
+}
 
 body {
     text-align: center;
     text-transform: uppercase;
-}
-
-h1 {
-    font-family: 'BigNoodleTitling';
-    font-size: 4vw;
-}
-
-p {
-    font-family: 'Roboto';
-    font-size: 1.75vw;
 }
 
 .marginStaff {

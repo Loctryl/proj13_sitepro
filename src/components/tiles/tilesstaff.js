@@ -4,7 +4,7 @@ import "./style/tilesstaff.css";
 export default function TilesStaff() {
   return (
     <>
-      <h1>staff</h1>
+      <h2>staff</h2>
       <Container className="marginStaff">
         <Row>
           <Col xs={3} md={3} lg={3}>

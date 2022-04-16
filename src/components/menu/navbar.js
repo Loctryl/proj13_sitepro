@@ -4,6 +4,13 @@ import "./navbar.css";
 
 export default function NavBar() {
     return <div className="marginNav">
+        <Link to="/">
+            <img
+                className="logoNavbar"
+                href={"../../../database/public/uploads/Logo_Colored_PNG_529f0a5229.png"}
+                alt="ALKYA's Logo"
+            />
+        </Link>
         <Navbar className="SetNavBar">
             <Stack direction="horizontal" gap={5}>
                 <Link to="/mainnews">actus</Link>
