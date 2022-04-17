@@ -1,14 +1,23 @@
 body {
-    background-image: url("../../../database/public/uploads/Fond_df4fc7d404.png");
-    background-repeat: no-repeat;
-    background-position: fixed;
-    background-size: cover;
+  background-image: url("../../../database/public/uploads/Fond_df4fc7d404.png");
+  background-repeat: no-repeat;
+  background-position: fixed;
+  background-size: cover;
 }
 
 h1 {
-    text-align: center;
-    color: black;
+  text-align: center;
+  color: black;
 }
+
+h2 {
+  margin: 3rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5vw;
+  font-weight: bold;
+}
+
 .customImg{
     height: 50vh !important;
     border-radius: 25px;
