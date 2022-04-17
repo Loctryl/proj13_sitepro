@@ -25,44 +25,38 @@ class App extends Component {
   }
 
   componentDidMount = async () => {
-    let 
-      reponse = null,
-      fetchNews = null,
-      fetchPartners = null,
-      fetchPlayers = null,
-      fetchSponsors = null,
-      fetchTeams = null
-    ;
 
-    reponse = await fetch('http://localhost:1337/api/news?populate=*', { method: 'GET', headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' } })
-    fetchNews = await reponse.json()
+    const reponse1 = await fetch('http://localhost:1337/api/news?populate=*', { method: 'GET', headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' } })
+    const fetchNews = await reponse1.json()
 
-    reponse = await fetch('http://localhost:1337/api/partners', { method: 'GET', headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' } })
-    fetchPartners = await reponse.json()
+    const reponse2 = await fetch('http://localhost:1337/api/partners?populate=*', { method: 'GET', headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' } })
+    const fetchPartners = await reponse2.json()
 
-    reponse = await fetch('http://localhost:1337/api/players', { method: 'GET', headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' } })
-    fetchPlayers = await reponse.json()
+    const reponse3 = await fetch('http://localhost:1337/api/players', { method: 'GET', headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' } })
+    const fetchPlayers = await reponse3.json()
 
-    reponse = await fetch('http://localhost:1337/api/sponsors', { method: 'GET', headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' } })
-    fetchSponsors = await reponse.json()
+    const reponse4 = await fetch('http://localhost:1337/api/sponsors?populate=*', { method: 'GET', headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' } })
+    const fetchSponsors = await reponse4.json()
 
-    reponse = await fetch('http://localhost:1337/api/teams', { method: 'GET', headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' } })
-    fetchTeams = await reponse.json()
+    const reponse5 = await fetch('http://localhost:1337/api/teams', { method: 'GET', headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' } })
+    const fetchTeams = await reponse5.json()
 
-    this.setState({ 
-      news: fetchNews, 
-      partners: fetchPartners, 
+    this.setState({
+      news: fetchNews,
+      partners: fetchPartners,
       players: fetchPlayers,
       sponsors: fetchSponsors,
-      teams: fetchTeams, 
-      loading: false })
+      teams: fetchTeams,
+      loading: false
+    })
   }
 
-  render(){
+  render() {
     return (
       <Router>
         <Routes>
-          <Route exact path='/' element={<Home/>}/>
+          <Route exact path='/' element={<Home partners={this.state.partners} sponsors={this.state.sponsors} 
+          />} />
           <Route exact path='/mainnews' element={<MainNews news={this.state.news}
           />}/>
           <Route path='/mainnews/news' element={<News news={this.state.news}/>}/>

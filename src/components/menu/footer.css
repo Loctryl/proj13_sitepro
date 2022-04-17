@@ -1,9 +1,73 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,700&display=swap');
 
-footer {
-  font-family: 'Roboto', sans-serif;
+/* GENERAL */
+
+h2 {
+  margin-top : 1.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: 0.13em;
 }
 
-.margin {
+svg { /* logos */
+  padding: 15px;
+  vertical-align: center;
+  text-align: center;
+} 
+
+img {
+  width: 60%;
+}
+
+
+/* CONTAINERS */
+footer {
+  border-top: 3px solid rgb(164, 164, 164);
+  padding-top: 2vh;
+  background-color: white;
+  height: auto;
+}
+
+.footerLinks {
+  border-top : 2px solid rgb(184, 184, 184);
+  margin-top : 5vh;
+  padding-top : 2vh;
+  padding-bottom: 2vh;
+}
+
+
+/* SPONSORS AND PARTNERS */
+
+.divImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* OTHER */
+.footerCol a {
+  display: inline-block;
+  vertical-align: middle;
+} 
+
+.text-align-center {
+  text-align: center;
+}
+
+.pdfs {
+  padding-top: 1vh;
+}
+
+.about {
+  text-align: start;
   margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.footerImg {
+  width: 25% !important;
 }
