@@ -1,31 +1,53 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,700&display=swap');
 
-footer {
-  border-top: 3px solid rgb(164, 164, 164);
-  padding-top: 2vh;
-  background-color: white;
-  position: sticky;
-}
-
-.footerCol{
-  text-align: center;
-}
-
-h3 {
+/* GENERAL */
+h3 { 
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
   font-weight: bold;
 } 
 
-svg {
+svg { /* logos */
   padding: 15px;
   vertical-align: center;
 } 
 
 img {
-  width: 25%;
+  width: 15%;
 }
 
-.margin {
-  margin: 0;
+
+/* CONTAINERS */
+footer {
+  border-top: 3px solid rgb(164, 164, 164);
+  padding-top: 2vh;
+  background-color: white;
+  height: auto;
+}
+
+.footerLinks {
+  border-top : 2px solid rgb(164, 164, 164);
+  margin-top : 5vh;
+  padding-top : 2vh;
+  padding-bottom: 2vh;
+}
+
+
+/* SPONSORS AND PARTNERS */
+
+.img img {
+  margin: auto;
+  display: block;
+}
+
+/* OTHER */
+.footerCol{
+  text-align: center;
+} .footerCol a {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.footerImg {
+  width: 25% !important;
 }
