@@ -1,19 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,700&display=swap');
 
 /* GENERAL */
-h3 { 
-  font-family: 'Roboto', sans-serif;
-  font-size: 18px;
-  font-weight: bold;
-} 
+
+h2 {
+  font-family: Roboto;
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: 0.13em;
+}
 
 svg { /* logos */
   padding: 15px;
   vertical-align: center;
+  text-align: center;
 } 
 
 img {
-  width: 15%;
+  width: 12%;
 }
 
 
@@ -26,7 +29,7 @@ footer {
 }
 
 .footerLinks {
-  border-top : 2px solid rgb(164, 164, 164);
+  border-top : 2px solid rgb(184, 184, 184);
   margin-top : 5vh;
   padding-top : 2vh;
   padding-bottom: 2vh;
@@ -35,17 +38,23 @@ footer {
 
 /* SPONSORS AND PARTNERS */
 
-.img img {
-  margin: auto;
-  display: block;
-}
 
 /* OTHER */
-.footerCol{
-  text-align: center;
-} .footerCol a {
+.footerCol a {
   display: inline-block;
   vertical-align: middle;
+} 
+
+.text-aligne-center {
+  text-align: center;
+}
+
+.about {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .footerImg {
