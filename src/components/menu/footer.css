@@ -3,7 +3,8 @@
 /* GENERAL */
 
 h2 {
-  font-family: Roboto;
+  margin-top : 1.5rem;
+  margin-bottom: 1.5rem;
   font-size: 32px;
   font-weight: 600;
   letter-spacing: 0.13em;
@@ -16,7 +17,7 @@ svg { /* logos */
 } 
 
 img {
-  width: 12%;
+  width: 60%;
 }
 
 
@@ -38,6 +39,11 @@ footer {
 
 /* SPONSORS AND PARTNERS */
 
+.divImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 /* OTHER */
 .footerCol a {
@@ -45,11 +51,16 @@ footer {
   vertical-align: middle;
 } 
 
-.text-aligne-center {
+.text-align-center {
   text-align: center;
 }
 
+.pdfs {
+  padding-top: 1vh;
+}
+
 .about {
+  text-align: start;
   margin: 0;
   font-family: 'Roboto', sans-serif;
   font-size: 18px;

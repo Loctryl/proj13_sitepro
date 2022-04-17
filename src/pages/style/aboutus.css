@@ -1,0 +1,28 @@
+@font-face {
+    font-family: BigNoodleTitling;
+    src: url("../../../database/public/uploads/big_noodle_titling.ttf");
+}
+
+body {
+    text-align: center;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-family: 'BigNoodleTitling';
+    font-size: 2vw;
+    color: black !important;
+    margin-bottom: 2vw;
+}
+
+p {
+    font-family: 'Roboto';
+    font-size: 1vw;
+    margin-right: 15%;
+    margin-left: 15%;
+}
+
+.logoWhy {
+    justify-content: center;
+    margin-bottom: 2vw;
+}

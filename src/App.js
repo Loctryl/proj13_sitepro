@@ -26,7 +26,6 @@ class App extends Component {
 
   componentDidMount = async () => {
 
-
     const reponse1 = await fetch('http://localhost:1337/api/news?populate=*', { method: 'GET', headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' } })
     const fetchNews = await reponse1.json()
 
