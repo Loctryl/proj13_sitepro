@@ -14,9 +14,7 @@ function MainNews (props) {
         <Row className="row">
           {props.news.data && props.news.data.map((news, i)=>(
             <Col sm={12} md={{ span: 4, offset: 1 }} lg={{ span: 6, offset: 0 }}>
-              <Link to={
-                "/mainnews/news?id="+i
-              }>
+              <Link to={"/mainnews/news?id="+i}>
                 <TilesNews news={news}/></Link>
             </Col>
           ))}
