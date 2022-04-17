@@ -13,6 +13,7 @@
     "bootstrap": "^5.1.3",
     "node-modules": "^1.0.1",
     "npm": "^8.6.0",
+    "query-string": "^7.1.1",
     "react": "^18.0.0",
     "react-bootstrap": "^2.2.3",
     "react-dom": "^18.0.0",

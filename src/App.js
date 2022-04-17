@@ -36,7 +36,6 @@ class App extends Component {
 
     reponse = await fetch('http://localhost:1337/api/news?populate=*', { method: 'GET', headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' } })
     fetchNews = await reponse.json()
-    this.setState({ news: fetchNews, loading: false })
 
     reponse = await fetch('http://localhost:1337/api/partners', { method: 'GET', headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' } })
     fetchPartners = await reponse.json()
@@ -66,11 +65,11 @@ class App extends Component {
           <Route exact path='/' element={<Home/>}/>
           <Route exact path='/mainnews' element={<MainNews news={this.state.news}
           />}/>
-          <Route exact path='/mainnews/news' element={<News/>}/>
+          <Route path='/mainnews/news' element={<News news={this.state.news}/>}/>
           <Route exact path='/aboutus' element={<AboutUs/>}/>
           <Route exact path='/mainteam' element={<MainTeam/>}/>
-          <Route exact path='/mainteam/team/player' element={<Player/>}/>
-          <Route exact path='/mainteam/team' element={<Team/>}/>
+          <Route path='/mainteam/team/player' element={<Player/>}/>
+          <Route path='/mainteam/team' element={<Team/>}/>
           <Route exact path='/shop' element={<Shop/>}/>
         </Routes>
       </Router>

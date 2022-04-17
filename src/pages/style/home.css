@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,700&display=swap');
+
 body {
   background-image: url("../../../database/public/uploads/Fond_df4fc7d404.png");
   background-repeat: no-repeat;
   background-position: fixed;
   background-size: cover;
+  font-family: 'Roboto', sans-serif;
 }
 
 h1 {
@@ -19,6 +22,6 @@ h2 {
 }
 
 .customImg{
-    height: 50vh !important;
-    border-radius: 25px;
+  height: 50vh !important;
+  border-radius: 25px;
 }
