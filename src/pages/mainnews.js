@@ -2,6 +2,7 @@ import { Row, Col, Image } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Footer from "../components/menu/footer";
 import NavBar from "../components/menu/navbar";
+import Footer from '../components/menu/footer.js'
 import TilesNews from "../components/tiles/tilesnews";
 import "./style/mainnews.css";
 
@@ -21,7 +22,7 @@ function MainNews (props) {
           ))}
         </Row>
       </div>
-      <Footer />
+      <Footer/>
     </>
   )
 }

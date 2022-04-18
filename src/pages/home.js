@@ -57,7 +57,7 @@ function Home(props) {
         </Carousel>
       </Col>
     </Row>
-    <Footer />
+    <Footer/>
   </>
   );
 }

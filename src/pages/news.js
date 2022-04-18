@@ -1,4 +1,5 @@
 import NavBar from "../components/menu/navbar";
+import Footer from '../components/menu/footer.js'
 import "./style/news.css";
 import queryString from 'query-string'
 import { useLocation } from "react-router-dom";
@@ -22,7 +23,7 @@ function News (props) {
           {news[values.id].attributes.content}
           </p>
         </div>
-        <Footer />
+        <Footer/>
       </>
   )
 }

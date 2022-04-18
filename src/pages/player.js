@@ -1,5 +1,6 @@
 import Footer from "../components/menu/footer";
 import NavBar from "../components/menu/navbar";
+import Footer from '../components/menu/footer.js'
 import "./style/player.css";
 
 function Player(props){
@@ -8,7 +9,7 @@ function Player(props){
       <>
         <NavBar />
         ijdbvoizrbok
-        <Footer />
+        <Footer/>
       </>
     )
   }

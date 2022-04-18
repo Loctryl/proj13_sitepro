@@ -49,9 +49,8 @@ export default class Footer extends Component {
             <h2>Sponsors Majeurs</h2>
             <Row>
               {this.state.sponsors.data?.map((sponsors, i) => (
-                <Col xs={6} lg={4} xxl={3} className="text-align-center divImg">
+                <Col key={i} xs={6} lg={4} xxl={3} className="text-align-center divImg">
                   <img
-                    key={i}
                     src={"http://localhost:1337" + sponsors.attributes.logo.data.attributes.url}
                     alt={"Sponsor " + sponsors.attributes.name}
                     onClick={() => redirect(sponsors.attributes.url)}
@@ -65,9 +64,8 @@ export default class Footer extends Component {
             <h2>Partenaires officiels</h2>
             <Row>
               {this.state.partners.data?.map((partners, i) => (
-                <Col xs={6} lg={4} xxl={3} className="text-align-center divImg">
+                <Col key={i} xs={6} lg={4} xxl={3} className="text-align-center divImg">
                   <img
-                    key={i}
                     src={"http://localhost:1337" + partners.attributes.logo.data.attributes.url}
                     alt={"Partner " + partners.attributes.name}
                     onClick={() => redirect(partners.attributes.url)}
