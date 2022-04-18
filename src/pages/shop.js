@@ -7,7 +7,7 @@ function Shop(props){
       <>
       <NavBar />
       <h2 className="shop">Coming Soon</h2>
-      <Footer partners={props.partners} sponsors={props.sponsors}/>
+      <Footer />
       </>
     )
   }

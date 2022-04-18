@@ -8,7 +8,7 @@ export default function NavBar() {
       <Link to="/">
         <img
           className="logoNavbar"
-          href={"../../../database/public/uploads/Logo_Colored_PNG_529f0a5229.png"}
+          src={"../../../database/public/uploads/Logo_Colored_PNG_529f0a5229.png"}
           alt="ALKYA's Logo"
         />
       </Link>

@@ -57,7 +57,7 @@ function Home(props) {
         </Carousel>
       </Col>
     </Row>
-    <Footer partners={props.partners} sponsors={props.sponsors}/>
+    <Footer />
   </>
   );
 }

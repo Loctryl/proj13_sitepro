@@ -44,16 +44,15 @@ class App extends Component {
     return (
       <Router>
         <Routes>
-          <Route exact path='/' element={<Home partners={this.state.partners} sponsors={this.state.sponsors} 
-          />} />
-          <Route exact path='/mainnews' element={<MainNews news={this.state.news} partners={this.state.partners} sponsors={this.state.sponsors}
+          <Route exact path='/' element={<Home/>} />
+          <Route exact path='/mainnews' element={<MainNews news={this.state.news}
           />}/>
-          <Route path='/mainnews/news' element={<News news={this.state.news} partners={this.state.partners} sponsors={this.state.sponsors}/>}/>
-          <Route exact path='/aboutus' element={<AboutUs partners={this.state.partners} sponsors={this.state.sponsors}/>}/>
-          <Route exact path='/mainteam' element={<MainTeam partners={this.state.partners} sponsors={this.state.sponsors}/>}/>
-          <Route path='/mainteam/team/player' element={<Player partners={this.state.partners} sponsors={this.state.sponsors}/>}/>
-          <Route path='/mainteam/team' element={<Team partners={this.state.partners} sponsors={this.state.sponsors}/>}/>
-          <Route exact path='/shop' element={<Shop partners={this.state.partners} sponsors={this.state.sponsors}/>}/>
+          <Route path='/mainnews/news' element={<News news={this.state.news} />}/>
+          <Route exact path='/aboutus' element={<AboutUs />}/>
+          <Route exact path='/mainteam' element={<MainTeam />}/>
+          <Route path='/mainteam/team/player' element={<Player />}/>
+          <Route path='/mainteam/team' element={<Team />}/>
+          <Route exact path='/shop' element={<Shop />}/>
         </Routes>
       </Router>
     )

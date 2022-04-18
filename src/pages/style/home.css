@@ -10,7 +10,6 @@ body {
   background-repeat: no-repeat;
   background-position: fixed;
   background-size: cover;
-  backdrop-filter: opacity(50%);
   font-family: 'Roboto', sans-serif;
 }
 

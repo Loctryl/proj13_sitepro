@@ -11,8 +11,8 @@ import { Component } from "react";
 
 export default class Footer extends Component {
 
-  constructor() {
-    super(this.state)
+  constructor(state) {
+    super(state)
     this.state = {
       sponsors: [],
       partners: [],

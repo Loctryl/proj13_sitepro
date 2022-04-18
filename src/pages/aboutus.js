@@ -26,7 +26,7 @@ function AboutUs(props) {
         </p>
       </div>
       <TilesStaff />
-      <Footer partners={props.partners} sponsors={props.sponsors}/>
+      <Footer />
     </>
   )
 }

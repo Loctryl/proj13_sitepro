@@ -22,7 +22,7 @@ function News (props) {
           {news[values.id].attributes.content}
           </p>
         </div>
-        <Footer partners={props.partners} sponsors={props.sponsors}/>
+        <Footer />
       </>
   )
 }

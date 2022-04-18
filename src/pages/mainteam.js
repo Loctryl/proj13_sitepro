@@ -8,7 +8,7 @@ function MainTeam(props){
       <>
       <NavBar />
     oué
-    <Footer partners={props.partners} sponsors={props.sponsors}/>
+    <Footer />
       </>
     )
   }

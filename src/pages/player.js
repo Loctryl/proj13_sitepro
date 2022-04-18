@@ -8,7 +8,7 @@ function Player(props){
       <>
         <NavBar />
         ijdbvoizrbok
-        <Footer partners={props.partners} sponsors={props.sponsors}/>
+        <Footer />
       </>
     )
   }

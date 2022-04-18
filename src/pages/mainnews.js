@@ -21,7 +21,7 @@ function MainNews (props) {
           ))}
         </Row>
       </div>
-      <Footer partners={props.partners} sponsors={props.sponsors}/>
+      <Footer />
     </>
   )
 }
