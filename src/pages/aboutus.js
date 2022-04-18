@@ -1,5 +1,6 @@
 import { Image, Stack } from "react-bootstrap";
 import NavBar from "../components/menu/navbar";
+import Footer from '../components/menu/footer.js'
 import TilesStaff from "../components/tiles/tilesstaff";
 import "./style/aboutus.css";
 
@@ -25,6 +26,7 @@ function AboutUs(props) {
         </p>
       </div>
       <TilesStaff />
+      <Footer/>
     </>
   )
 }

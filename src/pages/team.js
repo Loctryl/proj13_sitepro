@@ -1,4 +1,5 @@
 import NavBar from "../components/menu/navbar";
+import Footer from '../components/menu/footer.js'
 import "./style/team.css";
 
 function Team(props){
@@ -6,7 +7,8 @@ function Team(props){
     return (
       <>
       <NavBar />
-    oui
+      <p>oui</p>
+      <Footer/>
       </>
     )
   }

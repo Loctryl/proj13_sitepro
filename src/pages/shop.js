@@ -1,4 +1,5 @@
 import NavBar from "../components/menu/navbar";
+import Footer from '../components/menu/footer.js'
 import "./style/shop.css";
 
 function Shop(){
@@ -6,6 +7,7 @@ function Shop(){
       <>
       <NavBar />
       <h2 className="shop">Coming Soon</h2>
+      <Footer/>
       </>
     )
   }
