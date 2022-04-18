@@ -1,7 +1,7 @@
-@font-face {
+/*@font-face {
     font-family: BigNoodleTitling;
     src: url("../../../../database/public/uploads/big_noodle_titling.ttf");
-}
+}*/
 
 body {
     text-align: center;
@@ -11,6 +11,7 @@ body {
 .marginStaff {
     margin-top: 1.5vw;
     margin-bottom: 1.5vw;
+    
 }
 
 .imageStaff {

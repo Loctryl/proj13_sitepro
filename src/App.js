@@ -47,13 +47,13 @@ class App extends Component {
           <Route exact path='/' element={<Home partners={this.state.partners} sponsors={this.state.sponsors} 
           />} />
           <Route exact path='/mainnews' element={<MainNews news={this.state.news}
-          />} />
-          <Route exact path='/mainnews/news' element={<News />} />
-          <Route exact path='/aboutus' element={<AboutUs />} />
-          <Route exact path='/mainteam' element={<MainTeam />} />
-          <Route exact path='/mainteam/team/player' element={<Player />} />
-          <Route exact path='/mainteam/team' element={<Team />} />
-          <Route exact path='/shop' element={<Shop />} />
+          />}/>
+          <Route path='/mainnews/news' element={<News news={this.state.news}/>}/>
+          <Route exact path='/aboutus' element={<AboutUs/>}/>
+          <Route exact path='/mainteam' element={<MainTeam/>}/>
+          <Route path='/mainteam/team/player' element={<Player/>}/>
+          <Route path='/mainteam/team' element={<Team/>}/>
+          <Route exact path='/shop' element={<Shop/>}/>
         </Routes>
       </Router>
     )

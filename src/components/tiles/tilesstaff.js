@@ -13,7 +13,7 @@ export default function TilesStaff() {
             </Card>
             <p>role</p>
           </Col>
-          <Col xs={3} md={3} lg={3}>
+          {/* <Col xs={3} md={3} lg={3}>
             <Card className="imageStaff">
               <Card.Img src="../../../database/public/uploads/boris_d8a16c64dc.jpg" alt="Staff's pictures"/>
             </Card>
@@ -54,7 +54,7 @@ export default function TilesStaff() {
               <Card.Img src="../../../database/public/uploads/boris_d8a16c64dc.jpg" alt="Staff's pictures"/>
             </Card>
             <p>role</p>
-          </Col>
+          </Col> */}
         </Row>
       </Container>
     </>
