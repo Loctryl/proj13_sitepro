@@ -17,9 +17,7 @@ class App extends Component {
     super(props);
     this.state = {
       news: [],
-      partners: [],
       players: [],
-      sponsors: [],
       teams: []
     }
   }
@@ -29,25 +27,16 @@ class App extends Component {
     const reponse1 = await fetch('http://localhost:1337/api/news?populate=*', { method: 'GET', headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' } })
     const fetchNews = await reponse1.json()
 
-    const reponse2 = await fetch('http://localhost:1337/api/partners?populate=*', { method: 'GET', headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' } })
-    const fetchPartners = await reponse2.json()
-
     const reponse3 = await fetch('http://localhost:1337/api/players', { method: 'GET', headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' } })
     const fetchPlayers = await reponse3.json()
-
-    const reponse4 = await fetch('http://localhost:1337/api/sponsors?populate=*', { method: 'GET', headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' } })
-    const fetchSponsors = await reponse4.json()
 
     const reponse5 = await fetch('http://localhost:1337/api/teams', { method: 'GET', headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' } })
     const fetchTeams = await reponse5.json()
 
     this.setState({
       news: fetchNews,
-      partners: fetchPartners,
       players: fetchPlayers,
-      sponsors: fetchSponsors,
-      teams: fetchTeams,
-      loading: false
+      teams: fetchTeams
     })
   }
 
