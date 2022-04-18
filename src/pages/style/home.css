@@ -1,12 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,700&display=swap');
 
-@font-face {
-  font-family: BigNoodleTitling;
-  src: url("../../../database/public/uploads/big_noodle_titling.ttf");
-}
-
 body {
-  background-image: url("../../../database/public/uploads/Fond_df4fc7d404.jpg");
+  background-image: url("../../../database/public/uploads/large_Fond_df4fc7d404.png");
   background-repeat: no-repeat;
   background-position: fixed;
   background-size: cover;

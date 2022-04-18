@@ -2,3 +2,9 @@
 .row {
   margin: 0;
 }
+
+.pagination-news {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
