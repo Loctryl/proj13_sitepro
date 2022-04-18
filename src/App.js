@@ -11,7 +11,7 @@ import Shop from './pages/shop';
 import MainNews from './pages/mainnews';
 import Home from './pages/home';
 
-class App extends Component {
+export default class App extends Component {
 
   constructor(props) {
     super(props);
@@ -44,10 +44,8 @@ class App extends Component {
     return (
       <Router>
         <Routes>
-          <Route exact path='/' element={<Home partners={this.state.partners} sponsors={this.state.sponsors} 
-          />} />
-          <Route exact path='/mainnews' element={<MainNews news={this.state.news}
-          />}/>
+          <Route exact path='/' element={<Home/>} />
+          <Route exact path='/mainnews' element={<MainNews news={this.state.news}/>}/>
           <Route path='/mainnews/news' element={<News news={this.state.news}/>}/>
           <Route exact path='/aboutus' element={<AboutUs/>}/>
           <Route exact path='/mainteam' element={<MainTeam/>}/>
@@ -59,5 +57,3 @@ class App extends Component {
     )
   }
 }
-
-export default App;
