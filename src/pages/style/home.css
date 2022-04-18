@@ -1,24 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,700&display=swap');
 
+@font-face {
+  font-family: BigNoodleTitling;
+  src: url("../../../database/public/uploads/big_noodle_titling.ttf");
+}
+
 body {
-  background-image: url("../../../database/public/uploads/Fond_df4fc7d404.png");
+  background-image: url("../../../database/public/uploads/Fond_df4fc7d404.jpg");
   background-repeat: no-repeat;
   background-position: fixed;
   background-size: cover;
+  backdrop-filter: opacity(50%);
   font-family: 'Roboto', sans-serif;
 }
 
-h1 {
+h1, h2 {
+  font-family: 'BigNoodleTitling';
   text-align: center;
+  font-size: 3.5vw;
   color: black;
+  margin-bottom: 3.5vw !important;
+  letter-spacing: 0.5vw;
+  text-transform: uppercase;
 }
 
-h2 {
-  margin: 3rem;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 0.5vw;
-  font-weight: bold;
+p {
+  margin-bottom: 4vw;
 }
 
 .customImg{

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import "./style/home.css"
 import { Col, Row, Carousel } from 'react-bootstrap';
 import Footer from '../components/menu/footer.js'

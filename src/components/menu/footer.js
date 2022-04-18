@@ -25,7 +25,7 @@ export default function Footer(props) {
     <>
       <footer className="mt-auto">
         <Container className="footerSponsors">
-          <h2>Sponsors Majeurs</h2>
+          <h3>Sponsors Majeurs</h3>
           <Row>
             {props.sponsors.data?.map((sponsors, i) => (
               <Col xs={6} lg={4} xxl={3} className="text-align-center divImg">
@@ -41,7 +41,7 @@ export default function Footer(props) {
 
         </Container>
         <Container className="footerParteners">
-          <h2>Partenaires officiels</h2>
+          <h3>Partenaires officiels</h3>
           <Row>
             {props.partners.data?.map((partners, i) => (
               <Col xs={6} lg={4} xxl={3} className="text-align-center divImg">
@@ -64,7 +64,7 @@ export default function Footer(props) {
               <FontAwesomeIcon icon={faFacebook} onClick={() => redirect(social.facebook)} className="fa-xl" />
             </Col>
             <Col xs={12} md={6} lg={3} className="footerCol">
-              <h2 className="about">About</h2>
+              <h3 className="about">About</h3>
               <Link to="/mainnews">Actus</Link>
               <br />
               <Link to="/mainteam">Teams</Link>

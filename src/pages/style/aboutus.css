@@ -1,18 +1,5 @@
-/*@font-face {
-  font-family: BigNoodleTitling;
-  src: url("../../../database/public/uploads/big_noodle_titling.ttf");
-}*/
-
 body {
   text-align: center;
-}
-
-h2 {
-  text-transform: uppercase;
-  font-family: 'BigNoodleTitling';
-  font-size: 2vw;
-  color: black !important;
-  margin-bottom: 2vw;
 }
 
 .text {
@@ -24,5 +11,5 @@ h2 {
 
 .logoWhy {
   justify-content: center;
-  margin-bottom: 2vw;
+  margin-bottom: 4vw;
 }
