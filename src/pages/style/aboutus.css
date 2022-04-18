@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*@font-face {
   font-family: BigNoodleTitling;
   src: url("../../../database/public/uploads/big_noodle_titling.ttf");
@@ -11,6 +12,8 @@ h2 {
   margin-bottom: 2vw;
 }
 
+=======
+>>>>>>> c60d3cd17eae5c5f3f2693e8bd06c64ad7ed11e4
 .text {
   font-family: 'Roboto';
   font-size: 1vw;
@@ -20,5 +23,5 @@ h2 {
 
 .logoWhy {
   justify-content: center;
-  margin-bottom: 2vw;
+  margin-bottom: 4vw;
 }

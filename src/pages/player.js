@@ -1,3 +1,4 @@
+import Footer from "../components/menu/footer";
 import NavBar from "../components/menu/navbar";
 import Footer from '../components/menu/footer.js'
 import "./style/player.css";
