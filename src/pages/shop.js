@@ -1,12 +1,11 @@
 import NavBar from "../components/menu/navbar";
 import "./style/shop.css";
 
-function Shop(props){
-
+function Shop(){
     return (
       <>
       <NavBar />
-    Comming Soon
+      <h2 className="shop">Coming Soon</h2>
       </>
     )
   }
