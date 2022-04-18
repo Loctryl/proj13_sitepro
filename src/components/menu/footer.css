@@ -34,6 +34,9 @@ footer {
   margin-top : 5vh;
   padding-top : 2vh;
   padding-bottom: 2vh;
+  text-align: start !important;
+} .footerLinks a {
+  text-transform: none !important;
 }
 
 

@@ -3,10 +3,6 @@
   src: url("../../../database/public/uploads/big_noodle_titling.ttf");
 }*/
 
-body {
-  text-align: center;
-}
-
 h2 {
   text-transform: uppercase;
   font-family: 'BigNoodleTitling';
