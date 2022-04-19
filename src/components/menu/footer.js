@@ -46,13 +46,13 @@ export default class Footer extends Component {
       <>
         <footer className="mt-auto">
           <Container className="footerSponsors">
-            <h2>Sponsors Majeurs</h2>
+            <h3>Sponsors Majeurs</h3>
             <Row>
               {this.state.sponsors.data?.map((sponsors, i) => (
                 <Col key={i} xs={6} lg={4} xxl={3} className="text-align-center divImg">
                   <img
                     src={"http://localhost:1337" + sponsors.attributes.logo.data.attributes.url}
-                    alt={"Sponsor " + sponsors.attributes.name}
+                    alt={"Sponsor " + sponsors.attributes.name + " - Alkya"}
                     onClick={() => redirect(sponsors.attributes.url)}
                   />
                 </Col>
@@ -61,13 +61,13 @@ export default class Footer extends Component {
 
           </Container>
           <Container className="footerParteners">
-            <h2>Partenaires officiels</h2>
+            <h3>Partenaires officiels</h3>
             <Row>
               {this.state.partners.data?.map((partners, i) => (
                 <Col key={i} xs={6} lg={4} xxl={3} className="text-align-center divImg">
                   <img
                     src={"http://localhost:1337" + partners.attributes.logo.data.attributes.url}
-                    alt={"Partner " + partners.attributes.name}
+                    alt={"Partner " + partners.attributes.name + " - Alkya"}
                     onClick={() => redirect(partners.attributes.url)}
                   />
                 </Col>
@@ -83,7 +83,7 @@ export default class Footer extends Component {
                 <FontAwesomeIcon icon={faFacebook} onClick={() => redirect(this.state.social.facebook)} className="fa-xl" />
               </Col>
               <Col xs={12} md={6} lg={3} className="footerCol">
-                <h2 className="about">About</h2>
+                <h3 className="about">About</h3>
                 <Link to="/mainnews">Actus</Link>
                 <br />
                 <Link to="/mainteam">Teams</Link>
