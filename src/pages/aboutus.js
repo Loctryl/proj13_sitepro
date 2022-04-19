@@ -1,7 +1,6 @@
 import { Image, Stack } from "react-bootstrap";
 import Footer from "../components/menu/footer";
 import NavBar from "../components/menu/navbar";
-import Footer from '../components/menu/footer.js'
 import TilesStaff from "../components/tiles/tilesstaff";
 import "./style/aboutus.css";
 
