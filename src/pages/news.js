@@ -1,5 +1,4 @@
 import NavBar from "../components/menu/navbar";
-import Footer from '../components/menu/footer.js'
 import "./style/news.css";
 import queryString from 'query-string'
 import { useLocation } from "react-router-dom";

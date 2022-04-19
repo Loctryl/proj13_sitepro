@@ -52,7 +52,7 @@ export default class Footer extends Component {
                 <Col key={i} xs={6} lg={4} xxl={3} className="text-align-center divImg">
                   <img
                     src={"http://localhost:1337" + sponsors.attributes.logo.data.attributes.url}
-                    alt={"Sponsor " + sponsors.attributes.name}
+                    alt={"Sponsor " + sponsors.attributes.name + " - Alkya"}
                     onClick={() => redirect(sponsors.attributes.url)}
                   />
                 </Col>
@@ -67,7 +67,7 @@ export default class Footer extends Component {
                 <Col key={i} xs={6} lg={4} xxl={3} className="text-align-center divImg">
                   <img
                     src={"http://localhost:1337" + partners.attributes.logo.data.attributes.url}
-                    alt={"Partner " + partners.attributes.name}
+                    alt={"Partner " + partners.attributes.name + " - Alkya"}
                     onClick={() => redirect(partners.attributes.url)}
                   />
                 </Col>
