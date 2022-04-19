@@ -3,6 +3,7 @@ import "./style/home.css"
 import { Col, Row, Carousel } from 'react-bootstrap';
 import Footer from '../components/menu/footer.js'
 import NavBar from '../components/menu/navbar.js';
+import TilesStaff from "../components/tiles/tilesstaff";
 
 function Home(props) {
   return (
@@ -12,6 +13,7 @@ function Home(props) {
       <Row><Col xs={{ span: 10, offset: 1 }} md={{ span: 10, offset: 1 }}>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
       </Col></Row>
+      <TilesStaff staff={props.staff} />
       <br />
       <Row>
         <Col xs={{ span: 2, offset: 1 }} md={{ span: 2, offset: 1 }}>

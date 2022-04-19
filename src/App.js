@@ -18,7 +18,8 @@ export default class App extends Component {
     this.state = {
       news: [],
       players: [],
-      teams: []
+      teams: [],
+      staff: []
     }
   }
 
@@ -27,16 +28,20 @@ export default class App extends Component {
     const reponse1 = await fetch('http://localhost:1337/api/news?populate=*', { method: 'GET', headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' } })
     const fetchNews = await reponse1.json()
 
-    const reponse3 = await fetch('http://localhost:1337/api/players', { method: 'GET', headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' } })
-    const fetchPlayers = await reponse3.json()
+    const reponse2 = await fetch('http://localhost:1337/api/players', { method: 'GET', headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' } })
+    const fetchPlayers = await reponse2.json()
 
-    const reponse5 = await fetch('http://localhost:1337/api/teams', { method: 'GET', headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' } })
-    const fetchTeams = await reponse5.json()
+    const reponse3 = await fetch('http://localhost:1337/api/teams', { method: 'GET', headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' } })
+    const fetchTeams = await reponse3.json()
+
+    const reponse4 = await fetch('http://localhost:1337/api/staffs?populate=*', { method: 'GET', headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' } })
+    const fetchStaff = await reponse4.json()
 
     this.setState({
       news: fetchNews,
       players: fetchPlayers,
-      teams: fetchTeams
+      teams: fetchTeams,
+      staff: fetchStaff
     })
   }
 
@@ -44,10 +49,10 @@ export default class App extends Component {
     return (
       <Router>
         <Routes>
-          <Route exact path='/' element={<Home/>} />
+          <Route exact path='/' element={<Home staff={this.state.staff}/>} />
           <Route exact path='/mainnews' element={<MainNews news={this.state.news}/>}/>
           <Route path='/mainnews/news' element={<News news={this.state.news}/>}/>
-          <Route exact path='/aboutus' element={<AboutUs/>}/>
+          <Route exact path='/aboutus' element={<AboutUs staff={this.state.staff}/>}/>
           <Route exact path='/mainteam' element={<MainTeam/>}/>
           <Route path='/mainteam/team/player' element={<Player/>}/>
           <Route path='/mainteam/team' element={<Team/>}/>
