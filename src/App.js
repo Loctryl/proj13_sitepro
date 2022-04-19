@@ -49,7 +49,7 @@ export default class App extends Component {
     return (
       <Router>
         <Routes>
-          <Route exact path='/' element={<Home staff={this.state.staff}/>} />
+          <Route exact path='/' element={<Home staff={this.state.staff}/>} news={this.state.news} />
           <Route exact path='/mainnews' element={<MainNews news={this.state.news}/>}/>
           <Route path='/mainnews/news' element={<News news={this.state.news}/>}/>
           <Route exact path='/aboutus' element={<AboutUs staff={this.state.staff}/>}/>
