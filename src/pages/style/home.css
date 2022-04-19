@@ -1,10 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,700&display=swap');
 
 body {
-  background-image: url("../../../database/public/uploads/large_Fond_df4fc7d404.png");
-  background-repeat: no-repeat;
-  background-position: fixed;
-  background-size: cover;
   font-family: 'Roboto', sans-serif;
 }
 
