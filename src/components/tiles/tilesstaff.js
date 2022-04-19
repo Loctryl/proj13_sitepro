@@ -1,7 +1,7 @@
 import { Card, Col, Container, Row } from "react-bootstrap";
 import "./style/tilesstaff.css";
 
-export default function TilesStaff() {
+export default function TilesStaff(props) {
   return (
     <>
       <h2>staff</h2>
