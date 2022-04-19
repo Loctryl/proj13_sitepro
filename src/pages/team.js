@@ -9,7 +9,7 @@ function Team(props) {
   return (
     <>
       <NavBar />
-      <div className="teamBanner"></div>
+      <div className="teamBanner"><img src="../../../database/public/uploads/LOLTeam.png" alt="Alkya's banner for game"></img></div>
       <h2 className="line-up">notre line-up</h2>
       <h3 className="teamH3">joueurs</h3>
       <Row>
