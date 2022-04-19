@@ -16,7 +16,7 @@ function MainTeam(props){
         <Col sm={12} md={6} lg={6} className="teamCard">
           <Link to={'/mainteam/team'}>
           <Image
-          src={"../../database/public/uploads/LOLTeamBis.png"}
+          src={"http://localhost:1337/uploads/LOL_Team_Bis_812a7bfcb9.png?updated_at=2022-04-19T13:36:04.077Z"}
           alt="Alkya's LOL Team"
           />
           </Link>

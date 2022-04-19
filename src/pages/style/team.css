@@ -1,3 +1,4 @@
+/* mainteam.js */
 .teamDiv {
     text-align: center;
     margin-left: 35%;
@@ -16,4 +17,59 @@
 
 .teamCard {
     min-height: 40%;
+}
+
+/* team.js */
+.teamBanner {
+    margin: auto;
+    background-image: url("http://localhost:1337/uploads/LOL_Team_f5bff6d626.png?updated_at=2022-04-19T13:36:05.142Z");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10vw;
+    width: 95%;
+    height: 40vw;
+    margin-bottom: 4vw;
+}
+
+.line-up {
+    margin-left: 30%;
+    width: 40%;
+    font-size: 7.5vw;
+    border-bottom: 0.22vw solid;
+    border-color: #DFCB7D;
+    margin-bottom: 4vw;
+}
+
+.teamH3 {
+    margin-left: 4vw;
+    width: 19%;
+    font-size: 4vw;
+    color: black;
+    text-align: left;
+    border-bottom: 0.22vw solid;
+    border-color: #135066;
+    margin-bottom: 4vw;
+}
+
+.imgCard {
+    position: absolute;
+}
+
+.playerCard {
+    /* margin: auto; 
+    width: 11vw;
+    height: 16.5vw; */
+    font-family: 'BigNoodleTitling';
+    font-size: 2vw;
+    text-align: left;
+    color: black;
+    text-shadow: #135066 0.1vw 0.1vw 0.05vw;
+    vertical-align: text-bottom;
+    border-radius: 1vw;
+    margin-left: 4vw;
+    margin-bottom: 4vw;
+}
+
+.blueOne {
+    color: #135066;
 }

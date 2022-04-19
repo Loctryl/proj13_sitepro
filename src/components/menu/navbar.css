@@ -6,9 +6,8 @@ a {
 .logoNavbar {
     height: 5.5vw;
     width: auto;
-    position: absolute;
-    margin-left: -40%;
-
+    position: fixed;
+    margin-left: -20%;
 }
 
 .marginNav {
