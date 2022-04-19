@@ -1,8 +1,8 @@
 import NavBar from "../components/menu/navbar";
-import Footer from "../components/menu/footer";
 import "./style/news.css";
 import queryString from 'query-string'
 import { useLocation } from "react-router-dom";
+import Footer from "../components/menu/footer";
 
 
 function News (props) {
@@ -14,7 +14,7 @@ function News (props) {
     <>
       <NavBar />
         <div className="img-news">
-          {/*<img src={news.attributes.image && "http://localhost:1337"+news.attributes.image.data.attributes.url}></img>*/}
+          {/* <img src={news[values.id].attributes.image && "http://localhost:1337"+news.attributes.image.data.attributes.url}></img> */}
         </div>
         <h2>{news[values.id].attributes.title}</h2>
         <div className="content">

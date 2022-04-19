@@ -5,6 +5,9 @@
 
 .pagination-news {
   text-align: center;
+  width: 10%;
+  border: 2px solid black;
+  margin: 2rem;
   margin-left: auto;
   margin-right: auto;
 }
