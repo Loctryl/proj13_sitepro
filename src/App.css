@@ -21,7 +21,7 @@
 }
 
 body {
-  background-image: url("../database/public/uploads/large_Fond_df4fc7d404.png");
+  background-image: url("http://localhost:1337/uploads/Fond_7c89c60b2e.png?updated_at=2022-04-19T15:44:07.703Z");
   background-repeat: no-repeat;
   background-position: fixed;
   background-size: cover;
