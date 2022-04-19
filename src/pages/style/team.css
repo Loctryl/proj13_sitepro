@@ -1,0 +1,19 @@
+.teamDiv {
+    text-align: center;
+    margin-left: 35%;
+    justify-content: center;
+    height: 7.5vw;
+    width: 30%;
+    border-color: #135066 !important;
+    border: 0.22vw solid;
+    border-radius: 1vw;
+}
+
+.teamTitle {
+    font-size: 6vw !important;
+    letter-spacing: 13%;
+}
+
+.teamCard {
+    min-height: 40%;
+}
