@@ -1,30 +1,6 @@
-/* mainteam.js */
-.teamDiv {
-    text-align: center;
-    margin-left: 35%;
-    justify-content: center;
-    height: 7.5vw;
-    width: 30%;
-    border-color: #135066 !important;
-    border: 0.22vw solid;
-    border-radius: 1vw;
-}
-
-.teamTitle {
-    font-size: 6vw !important;
-    letter-spacing: 13%;
-}
-
-.teamCard {
-    min-height: 40%;
-}
-
 /* team.js */
 .teamBanner {
     margin: auto;
-    background-image: url("http://localhost:1337/uploads/LOL_Team_f5bff6d626.png?updated_at=2022-04-19T13:36:05.142Z");
-    background-repeat: no-repeat;
-    background-size: cover;
     border-radius: 10vw;
     width: 95%;
     height: 40vw;
@@ -56,9 +32,6 @@
 }
 
 .playerCard {
-    /* margin: auto; 
-    width: 11vw;
-    height: 16.5vw; */
     font-family: 'BigNoodleTitling';
     font-size: 2vw;
     text-align: left;

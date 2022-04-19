@@ -18,6 +18,10 @@ p {
   margin-bottom: 4vw;
 }
 
+.nos-equipes {
+  margin: 50px !important;
+}
+
 .customImg{
   height: 50vh !important;
   border-radius: 25px;
