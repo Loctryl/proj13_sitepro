@@ -18,7 +18,8 @@ export default class App extends Component {
     this.state = {
       news: [],
       staff: [],
-      teams: []
+      teams: [],
+      player: []
     }
   }
 
@@ -33,10 +34,14 @@ export default class App extends Component {
     const reponse3 = await fetch('http://localhost:1337/api/teams?populate=*', { method: 'GET', headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' } })
     const fetchTeams = await reponse3.json()
 
+    const reponse4 = await fetch('http://localhost:1337/api/players?populate=*', { method: 'GET', headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' } })
+    const fetchPlayers = await reponse4.json()
+
     this.setState({
       news: fetchNews,
       staff: fetchStaff,
-      teams: fetchTeams
+      teams: fetchTeams,
+      players: fetchPlayers
     })
   }
 
