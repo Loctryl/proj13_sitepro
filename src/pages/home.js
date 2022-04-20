@@ -9,8 +9,8 @@ import TilesNews from '../components/tiles/tilesnews';
 
 export default class Home extends Component {
 
-  constructor(state) {
-    super(state)
+  constructor(props) {
+    super(props)
     this.state = {
       games: []
     }
@@ -29,7 +29,8 @@ export default class Home extends Component {
   render() {
     return (
       <>
-        <NavBar /> {/* ../components/tiles/tilesstaff.js */}
+        <NavBar /> {/* ../components/menu/navbar.js */}
+        
 
         <Container>
           <Row>
@@ -79,7 +80,7 @@ export default class Home extends Component {
               i < 2 ? // if id > 2 
                 <Col key={i} xs={12} lg={6}> {/* print the TileNews */}
                   <Link to={"/mainnews/news?id=" + i}>
-                    <TilesNews news={news} /> {/* ../components/tiles/tilesnews.js */}
+                    <TilesNews link={news.attributes.image.data.attributes.url} title={news.attributes.title} /> {/* ../components/tiles/tilesnews.js */}
                   </Link>
                 </Col>
                 : void (0) // else do nothing

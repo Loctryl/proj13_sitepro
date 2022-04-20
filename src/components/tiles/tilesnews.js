@@ -2,19 +2,17 @@ import { Card } from "react-bootstrap";
 import "./style/tilesnews.css";
 
 
-function TilesNews(props){
+export default function TilesNews(props){
   return (
     <>
       <Card className="card">
-        <Card.Img className="image" variant="top" src={props.news.attributes.image && "http://localhost:1337"+props.news.attributes.image.data.attributes.url} />
+        <Card.Img className="image" variant="top" src={"http://localhost:1337"+props.link} />
         <Card.Body>
           <Card.Text className="title">
-            {props.news.attributes.title}
+            {props.title}
           </Card.Text>
         </Card.Body>
       </Card>
     </>
   )
 }
-
-export default TilesNews;

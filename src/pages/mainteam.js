@@ -7,8 +7,8 @@ import "./style/mainteam.css";
 
 export default class MainTeam extends Component {
 
-  constructor(state) {
-    super(state)
+  constructor(props, state) {
+    super(props, state)
     this.state = {
       players: [],
       teams: []
@@ -28,6 +28,7 @@ export default class MainTeam extends Component {
   }
 
   render() {
+    console.log(this.state)
     return (
       <>
         <NavBar />
