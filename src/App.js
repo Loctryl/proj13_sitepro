@@ -17,7 +17,8 @@ export default class App extends Component {
     super(props);
     this.state = {
       news: [],
-      staff: []
+      staff: [],
+      teams: []
     }
   }
 
@@ -29,9 +30,13 @@ export default class App extends Component {
     const reponse2 = await fetch('http://localhost:1337/api/staffs?populate=*', { method: 'GET', headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' } })
     const fetchStaff = await reponse2.json()
 
+    const reponse3 = await fetch('http://localhost:1337/api/teams?populate=*', { method: 'GET', headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' } })
+    const fetchTeams = await reponse3.json()
+
     this.setState({
       news: fetchNews,
-      staff: fetchStaff
+      staff: fetchStaff,
+      teams: fetchTeams
     })
   }
 
@@ -44,9 +49,9 @@ export default class App extends Component {
             <Route exact path='/mainnews' element={<MainNews news={this.state.news}/>}/>
             <Route path='/mainnews/news' element={<News news={this.state.news}/>}/>
             <Route exact path='/aboutus' element={<AboutUs staff={this.state.staff}/>}/>
-            <Route exact path='/mainteam' element={<MainTeam/>}/>
+            <Route exact path='/mainteam' element={<MainTeam teams={this.state.teams}/>}/>
             <Route path='/mainteam/team/player' element={<Player/>}/>
-            <Route path='/mainteam/team' element={<Team/>}/>
+            <Route path='/mainteam/team' element={<Team teams={this.state.teams}/>}/>
             <Route exact path='/shop' element={<Shop/>}/>
           </Routes>
         </Router>
