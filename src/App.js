@@ -17,48 +17,41 @@ export default class App extends Component {
     super(props);
     this.state = {
       news: [],
-      players: [],
-      teams: [],
       staff: []
     }
   }
 
   componentDidMount = async () => {
 
-    const reponse1 = await fetch('http://localhost:1337/api/news?populate=*', { method: 'GET', headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' } })
+    const reponse1 = await fetch('http://localhost:1337/api/news?populate=*', { method: 'GET', headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' }, populate: ['image'] })
     const fetchNews = await reponse1.json()
 
-    const reponse2 = await fetch('http://localhost:1337/api/players', { method: 'GET', headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' } })
-    const fetchPlayers = await reponse2.json()
-
-    const reponse3 = await fetch('http://localhost:1337/api/teams', { method: 'GET', headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' } })
-    const fetchTeams = await reponse3.json()
-
-    const reponse4 = await fetch('http://localhost:1337/api/staffs?populate=*', { method: 'GET', headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' } })
-    const fetchStaff = await reponse4.json()
+    const reponse2 = await fetch('http://localhost:1337/api/staffs?populate=*', { method: 'GET', headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' } })
+    const fetchStaff = await reponse2.json()
 
     this.setState({
       news: fetchNews,
-      players: fetchPlayers,
-      teams: fetchTeams,
       staff: fetchStaff
     })
   }
 
   render() {
-    return (
-      <Router>
-        <Routes>
-          <Route exact path='/' element={<Home news={this.state.news} staff={this.state.staff}/>}  />
-          <Route exact path='/mainnews' element={<MainNews news={this.state.news}/>}/>
-          <Route path='/mainnews/news' element={<News news={this.state.news}/>}/>
-          <Route exact path='/aboutus' element={<AboutUs staff={this.state.staff}/>}/>
-          <Route exact path='/mainteam' element={<MainTeam/>}/>
-          <Route path='/mainteam/team/player' element={<Player/>}/>
-          <Route path='/mainteam/team' element={<Team/>}/>
-          <Route exact path='/shop' element={<Shop/>}/>
-        </Routes>
-      </Router>
-    )
+    if (this.state.news.length != 0 && this.state.staff.length != 0) {
+      return (
+        <Router>
+          <Routes>
+            <Route exact path='/' element={<Home news={this.state.news} staff={this.state.staff}/>}  />
+            <Route exact path='/mainnews' element={<MainNews news={this.state.news}/>}/>
+            <Route path='/mainnews/news' element={<News news={this.state.news}/>}/>
+            <Route exact path='/aboutus' element={<AboutUs staff={this.state.staff}/>}/>
+            <Route exact path='/mainteam' element={<MainTeam/>}/>
+            <Route path='/mainteam/team/player' element={<Player/>}/>
+            <Route path='/mainteam/team' element={<Team/>}/>
+            <Route exact path='/shop' element={<Shop/>}/>
+          </Routes>
+        </Router>
+      )
+    }
+    
   }
 }

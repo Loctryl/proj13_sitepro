@@ -49,8 +49,8 @@ export default class MainNews extends Component {
         <h2>Actualitées</h2>
         <div>
           <Row className="row">
-            {this.state.news.data && this.state.news.data.map((news, i)=>(
-              <Col sm={12} md={{ span: 4, offset: 1 }} lg={{ span: 6, offset: 0 }}>
+            {this.state.news.data && this.state.news.data?.map((news, i)=>(
+              <Col key={i} sm={12} md={{ span: 4, offset: 1 }} lg={{ span: 6, offset: 0 }}>
                 <Link to={"/mainnews/news?id="+i}>
                   <TilesNews news={news}/>
                 </Link>

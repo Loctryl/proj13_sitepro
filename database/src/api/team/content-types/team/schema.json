@@ -28,15 +28,32 @@
       "inversedBy": "names"
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
+      ]
+    },
+    "styled_image": {
       "type": "media",
       "multiple": false,
-      "required": true
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "image_alt": {
+      "type": "string"
+    },
+    "styled_image_alt": {
+      "type": "string"
     }
   }
 }
