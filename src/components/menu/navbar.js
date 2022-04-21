@@ -1,5 +1,7 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faNewspaper, faUserTie, faPeopleGroup, faCartShopping } from "@fortawesome/free-solid-svg-icons";
 import { Offcanvas } from "bootstrap";
-import { Container, Nav, Navbar, NavDropdown, Stack } from "react-bootstrap";
+import { Container, Nav, Navbar, NavDropdown, OffcanvasHeader, OffcanvasTitle, OffcanvasBody, Stack } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "./navbar.css";
 
@@ -25,7 +27,7 @@ export default function NavBar() {
         <div className="line" />
       </div>
       <div className="element-to-hide-on-other">
-        <Navbar bg="light" expand={false}>
+        <Navbar expand={false}>
           <Container fluid>
             <Navbar.Brand>
               <Link to="/">
@@ -42,17 +44,20 @@ export default function NavBar() {
               aria-labelledby="offcanvasNavbarLabel"
               placement="end"
             >
-              <Offcanvas.Header closeButton>
-                <Offcanvas.Title id="offcanvasNavbarLabel">ALKYA</Offcanvas.Title>
-              </Offcanvas.Header>
-              <Offcanvas.Body>
-                <Nav className="justify-content-end flex-grow-1 pe-3">
-                  <Link to="/mainnews">actus</Link>
-                  <Link to="/aboutus">about us</Link>
-                  <Link to="/mainteam">teams</Link>
-                  <Link to="/shop">shop</Link>
+              <OffcanvasHeader closeButton>
+                <OffcanvasTitle id="offcanvasNavbarLabel">ALKYA</OffcanvasTitle>
+              </OffcanvasHeader>
+              <OffcanvasBody>
+                <Nav className="justify-content-start flex-grow-1 pe-3">
+                  <Link to="/mainnews">Actus <FontAwesomeIcon icon={faNewspaper} className="fa-xl" /> </Link>
+                  <hr />
+                  <Link to="/aboutus">About Us <FontAwesomeIcon icon={faUserTie} className="fa-xl" /></Link>
+                  <hr />
+                  <Link to="/mainteam">Teams <FontAwesomeIcon icon={faPeopleGroup} className="fa-xl" /></Link>
+                  <hr />
+                  <Link to="/shop">Shop <FontAwesomeIcon icon={faCartShopping} className="fa-xl" /></Link>
                 </Nav>
-              </Offcanvas.Body>
+              </OffcanvasBody>
             </Navbar.Offcanvas>
           </Container>
         </Navbar>
