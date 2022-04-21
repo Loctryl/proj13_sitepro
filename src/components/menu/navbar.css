@@ -35,3 +35,15 @@ a {
     margin-right: 27.5%;
     background-color: #135066;
 }
+
+@media (max-width: 600px) {
+    .element-to-hide-on-small {
+        display: none;
+    }
+}
+
+@media (min-width: 600px) {
+    .element-to-hide-on-other {
+        display: none;
+    }
+}

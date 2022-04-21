@@ -1,5 +1,4 @@
-import { Component } from "react";
-import { Col, Container, Image, Row } from "react-bootstrap";
+import { Col, Image, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Footer from "../components/menu/footer";
 import NavBar from "../components/menu/navbar";
