@@ -35,3 +35,46 @@ a {
     margin-right: 27.5%;
     background-color: #135066;
 }
+
+@media (max-width: 600px) {
+    .element-to-hide-on-small {
+        display: none;
+    }
+
+    svg {
+        padding: 0px 0px 0px 15px !important;
+    }
+
+    .logoNavbar {
+        position:unset !important;
+        width: 11vw;
+        height: auto;
+    }
+
+    .navbar-toggler {
+        background-color: #f8f9fa !important;
+        color: white !important;
+    }
+
+    .offcanvas-end {
+        width: 85%;
+        border-radius: 20px 0px 0px 20px;
+        height: 40% !important;
+        text-align:start
+    }
+
+    .offcanvas-header {
+        justify-content: end !important;
+    }
+
+    .offcanvas-title {
+        font-size: 30px;
+        padding-right: 15px;
+    }
+}
+
+@media (min-width: 600px) {
+    .element-to-hide-on-other {
+        display: none;
+    }
+}
