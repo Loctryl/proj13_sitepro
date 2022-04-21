@@ -45,7 +45,6 @@ export default class Home extends Component {
           </Row>
         </Container>
 
-        <h2>staff</h2>
         <Container>
           <Row>
             {this.props.staff.data?.map((staff, i) => ( // maping every staff member in DB 
