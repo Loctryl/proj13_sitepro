@@ -45,26 +45,26 @@ export default class Footer extends Component {
     return (
       <>
         <footer className="mt-auto">
-          <Container className="footerSponsors">
             <h3>Sponsors Majeurs</h3>
-            <Row>
-              {this.state.sponsors.data?.map((sponsors, i) => (
-                <Col key={i} xs={6} lg={4} xxl={3} className="text-align-center divImg">
-                  <img
-                    src={"http://localhost:1337" + sponsors.attributes.logo.data.attributes.url}
-                    alt={"Sponsor " + sponsors.attributes.name + " - Alkya"}
-                    onClick={() => redirect(sponsors.attributes.url)}
-                  />
-                </Col>
-              ))}
-            </Row>
-
-          </Container>
-          <Container className="footerParteners">
+            <Container>
+              <Row>
+                {this.state.sponsors.data?.map((sponsors, i) => (
+                  <Col key={i} xs={{ span:6}} md={6} lg={{ span: 6}} xxl={{ span: 6}}>
+                    <img
+                      src={"http://localhost:1337" + sponsors.attributes.logo.data.attributes.url}
+                      alt={"Sponsor " + sponsors.attributes.name + " - Alkya"}
+                      onClick={() => redirect(sponsors.attributes.url)}
+                      className='img-sponsor'
+                    />
+                  </Col>
+                ))}
+              </Row>
+            </Container>
+          <Container>
             <h3>Partenaires officiels</h3>
             <Row>
               {this.state.partners.data?.map((partners, i) => (
-                <Col key={i} xs={6} lg={4} xxl={3} className="text-align-center divImg">
+                <Col key={i} xs={6} md={6} lg={4} xxl={3} className="text-align-center divImg">
                   <img
                     src={"http://localhost:1337" + partners.attributes.logo.data.attributes.url}
                     alt={"Partner " + partners.attributes.name + " - Alkya"}
@@ -74,32 +74,32 @@ export default class Footer extends Component {
               ))}
             </Row>
           </Container>
-          <Container className="footerLinks">
+          <div className="footerLinks">
             <Row>
-              <Col xs={12} md={6} lg={3} className="footerCol text-align-center">
-                <FontAwesomeIcon icon={faTwitch} onClick={() => redirect(this.state.social.twitch)} className="fa-xl" />
+              <Col xs={12} md={6} lg={3} className="footer-media text-align-center">
                 <FontAwesomeIcon icon={faInstagram} onClick={() => redirect(this.state.social.insta)} className="fa-xl" />
                 <FontAwesomeIcon icon={faTwitter} onClick={() => redirect(this.state.social.twitter)} className="fa-xl" />
+                <FontAwesomeIcon icon={faTwitch} onClick={() => redirect(this.state.social.twitch)} className="fa-xl" />
                 <FontAwesomeIcon icon={faFacebook} onClick={() => redirect(this.state.social.facebook)} className="fa-xl" />
               </Col>
               <Col xs={12} md={6} lg={3} className="footerCol">
-                <h3 className="about">About</h3>
-                <Link to="/mainnews">Actus</Link>
-                <br />
-                <Link to="/mainteam">Teams</Link>
-                <br />
-                <Link to="/aboutus">Qui sommes nous ?</Link>
+                <h4 className="about">About</h4>
+                <div className="links-foot">
+                  <Link to="/mainnews"><h5>Actus</h5></Link>
+                  <Link to="/mainteam"><h5>Teams</h5></Link>
+                  <Link to="/aboutus"><h5>Qui sommes nous ?</h5></Link>
+                </div>
               </Col>
               <Col xs={12} md={6} lg={3} className="footerCol pdfs">
-                <a target="_blank" href={CguPdf}>Conditions Générales d'Utilisation</a>
-                <a target="_blank" href={MlPdf}>Mentions Légales</a>
-                <a target="_blank" href={MlPdf}>Politique de Confidentialité</a>
+                <h5><a target="_blank" href={CguPdf}>CGU</a></h5>
+                <h5><a target="_blank" href={MlPdf}>Mentions Légales</a></h5>
+                <h5><a target="_blank" href={MlPdf}>Politique de Confidentialité</a></h5>
               </Col>
               <Col xs={12} md={6} lg={3} className="footerCol text-align-center">
                 <img className="footerImg" src="http://localhost:1337/uploads/Logo_Black_PNG_3d29f3295a.png?updated_at=2022-04-12T08:59:34.451Z" />
               </Col>
             </Row>
-          </Container>
+          </div>
         </footer>
       </>
     )

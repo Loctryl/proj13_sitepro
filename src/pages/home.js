@@ -39,7 +39,7 @@ export default class Home extends Component {
             </Col>
           </Row>
           <Row>
-            <Col xs={{ span: 10, offset: 1 }} md={{ span: 10, offset: 1 }}>
+            <Col xs={{ span: 10, offset: 1 }} md={{ span: 10, offset: 1 }} lg={{ span: 10, offset: 1 }} xl={{ span: 10, offset: 1 }}>
               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
             </Col>
           </Row>
@@ -49,7 +49,7 @@ export default class Home extends Component {
         <Container>
           <Row>
             {this.props.staff.data?.map((staff, i) => ( // maping every staff member in DB 
-              <Col key={i} xs={3} md={3} lg={3}>
+              <Col className='staff-home' key={i} xs={{ span: 6 }} md={{ span: 4 }} lg={{ span: 2}}>
                 <TilesStaff key={i} staff={staff} /> {/* ../components/tiles/tilesstaff.js */}
               </Col>
             ))}
@@ -61,7 +61,7 @@ export default class Home extends Component {
         <Container>
           <Row>
             <Col xs={{ span: 10, offset: 1 }} md={{ span: 10, offset: 1 }}>
-              <Carousel interval={null} fade={true}>
+              <Carousel interval={null} fade={true} className='customImg'>
                 {this.state.games.data?.map((game, i) => ( // maping every carousel image and its alt from DB
                   <Carousel.Item key={i}>
                     <img className="d-block w-100 img-fluid customImg" src={"http://localhost:1337" + game.attributes.image.data.attributes.url} alt={game.alt} />
@@ -71,7 +71,7 @@ export default class Home extends Component {
             </Col>
           </Row>
         </Container>
-        <Link className="nos-equipes" to="/mainteam"> toutes nos équipes </Link>
+        <Link to="/mainteam"><h3 className="hoverlink">toutes nos équipes</h3></Link>
 
         <h2 >dernières actualités</h2>
         <Container>
@@ -86,6 +86,7 @@ export default class Home extends Component {
                 : void (0) // else do nothing
             ))}
           </Row>
+          <Link to={"/mainnews"}><h3 className="hoverlink">En savoir plus</h3></Link>
         </Container>
 
         <Footer /> {/* ../components/menu/footer.js */}

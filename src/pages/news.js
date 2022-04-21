@@ -13,9 +13,7 @@ function News (props) {
   return (
     <>
       <NavBar />
-        <div className="img-news">
-          {/* <img src={news[values.id].attributes.image && "http://localhost:1337"+news.attributes.image.data.attributes.url}></img> */}
-        </div>
+          <img className="img-news" src={news[values.id].attributes.image && "http://localhost:1337"+news[values.id].attributes.image.data.attributes.url}></img>
         <h2>{news[values.id].attributes.title}</h2>
         <div className="content">
           <p>

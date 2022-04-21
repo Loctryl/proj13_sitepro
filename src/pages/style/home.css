@@ -1,28 +1,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,700&display=swap');
 
+:root {
+  --blue1: #126782;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
+  font-size: 1.125rem;
+}
+
+h1, h2, h3 {
+  text-align: center;
+  color: black;
+  margin-bottom: 2.5vw !important;
+  text-transform: uppercase;
 }
 
 h1, h2 {
   font-family: 'BigNoodleTitling';
-  text-align: center;
-  font-size: 3.5vw;
-  color: black;
-  margin-bottom: 3.5vw !important;
+  font-size: 3.5rem;
   letter-spacing: 0.5vw;
-  text-transform: uppercase;
+}
+
+h3 {
+  margin-top: 2.5vw !important;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.563rem;
+  letter-spacing: 0.3vw;
 }
 
 p {
   margin-bottom: 4vw;
-}
-
-.nos-equipes {
-  margin: 50px !important;
+  text-transform: none;
+  text-align: justify;
 }
 
 .customImg{
   height: 50vh !important;
   border-radius: 25px;
+  box-shadow: 10px 10px 10px grey;
+}
+
+.staff-home {
+  margin-left: 5rem;
+}
+
+.hoverlink:hover {
+  color: var(--blue1);
 }

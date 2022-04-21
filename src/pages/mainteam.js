@@ -19,9 +19,9 @@ export default function MainTeam(props) {
             <Link to={'/mainteam/team?id=' + i}>
               <Image
                 src={"http://localhost:1337" + team.attributes.styled_image.data.attributes.url}
-                alt="Alkya's LOL Team"
+                alt="Alkya's Team"
               />
-            </Link>
+            </Link> 
           </Col>
         ))}
       </Row>

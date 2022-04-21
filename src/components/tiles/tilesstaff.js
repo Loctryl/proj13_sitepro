@@ -13,7 +13,6 @@ export default function TilesStaff(props) {
         />
       </Card>
       <p>{props.staff.attributes.first_name} {props.staff.attributes.last_name} - {props.staff.attributes.post}</p> 
-    </>
-      
+    </> 
   )
 }

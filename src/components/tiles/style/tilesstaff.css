@@ -1,14 +1,18 @@
 body {
-    text-align: center;
-    text-transform: uppercase;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .marginStaff {
-    margin-top: 1.5vw;
-    margin-bottom: 1.5vw;
+  margin-top: 1.5vw;
+  margin-bottom: 1.5vw;
     
 }
 
+.cardImg {
+  border-radius: 50px;
+}
+
 .imageStaff {
-    border-radius: 50px;
+  border-radius: 50px;
 }

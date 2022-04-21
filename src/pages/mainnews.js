@@ -1,6 +1,6 @@
 
 import { Component } from "react";
-import { Row, Col, Pagination } from "react-bootstrap";
+import { Row, Col, Pagination, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Footer from "../components/menu/footer";
 import NavBar from "../components/menu/navbar";
@@ -17,7 +17,7 @@ export default class MainNews extends Component {
       query : qs.stringify({
         pagination: {
           page: pagin,
-          pageSize: 4,
+          pageSize: 6,
         },
       }, {
         encodeValuesOnly: true,
@@ -32,6 +32,7 @@ export default class MainNews extends Component {
     this.setState({
       news: fetchNews,
     })
+    
   }
 
   pagination() {
@@ -47,19 +48,19 @@ export default class MainNews extends Component {
       <>
         <NavBar />
         <h2>Actualitées</h2>
-        <div>
-          <Row className="row">
-            {this.state.news.data && this.state.news.data?.map((news, i)=>(
-              <Col key={i} sm={12} md={{ span: 4, offset: 1 }} lg={{ span: 6, offset: 0 }}>
+        <Container>
+          <Row>
+            {this.state.news.data?.map((news, i)=>(
+              <Col sm={12} md={{ span: 4, offset: 0 }} lg={{ span: 6, offset: 0 }}>
                 <Link to={"/mainnews/news?id="+i}>
-                  <TilesNews news={news}/>
+                  <TilesNews link={news.attributes.image.data.attributes.url} title={news.attributes.title}/>
                 </Link>
               </Col>
             ))}
           </Row>
-        </div>
+        </Container>
         <div className="pagination-news">
-          {this.pagination()}
+          { /*i.map((news))*/}
         </div>
         <Footer/>
       </>
