@@ -7,9 +7,10 @@
 }
 
 .line-up {
-  margin-left: 30%;
-  width: 40%;
-  font-size: 7.5vw;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+  font-size: 7.75vh;
   border-bottom: 0.4vw solid;
   border-color: #DFCB7D;
   margin-bottom: 4vh;
@@ -19,7 +20,7 @@
   font-family: 'BigNoodleTitling';
   margin-left: 4vw;
   width: 18.17vw;
-  font-size: 4rem;
+  font-size: 6.6vh;
   text-align: left;
   border-bottom: 0.22vw solid;
   border-color: #135066;

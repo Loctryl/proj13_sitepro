@@ -11,8 +11,10 @@ export default function Team(props) {
 
   const values = queryString.parse(useLocation().search)
   let filterplayers = props.players.data
+  let filtercoach = props.players.data
   filterplayers = filterplayers.filter(players => players.attributes.team.data.id === parseInt(values.id)+1)
-  // console.log( props.teams.data[values.id].id);
+  filterplayers = filterplayers.filter(players => players.attributes.coach === false)
+  filtercoach = filtercoach.filter(players => players.attributes.coach === true)
   // console.log(props.teams.data.attributes.players.data.attributes.first_name)
   return (
     <>
@@ -23,25 +25,22 @@ export default function Team(props) {
       <Container>
         <Row>
           {filterplayers.map((player, i) => (
+            <Col key={i} sm={12} md={12} lg={3} className="playerCard">
+              <Link to={"/mainteam/team/player?id=" + player.id}><TilesPlayer player={player}/></Link>
+            </Col>
+          ))}
+        </Row>
+      </Container>
+      <h3 className="teamH3">&nbsp;coach</h3>
+      <Container>
+        <Row>
+          {filtercoach.map((player, i) => (
             <Col key={i} sm={6} md={4} lg={3} className="playerCard">
               <TilesPlayer player={player}/>
             </Col>
           ))}
         </Row>
       </Container>
-      <h3 className="teamH3">&nbsp;coach</h3>
-      <Row>
-        <Col sm={6} md={4} lg={4} className="playerCard">
-          <Link to={"/mainteam/team/player"}>
-            <img src="../../database/public/uploads/rekkles.jpeg" alt="Alkya's players images" className="imgCard"></img>
-            <div>
-              <p>prénom</p>
-              <p className="blueOne">"pseudo"</p>
-              <p>nom de famille</p>
-            </div>
-          </Link>
-        </Col>
-      </Row>
 
       <Footer />
     </>

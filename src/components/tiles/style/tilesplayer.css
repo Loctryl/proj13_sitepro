@@ -1,6 +1,6 @@
 .imgCard-players {
   height: 50vh;
-  width: 16.8vw;
+  width: 100%;
   border-radius: 5vh;
   background-size: cover;
   background-repeat: no-repeat;
@@ -12,9 +12,15 @@
   margin-top: 7%;
 }
 
+.role-player {
+  height: 5.7vh;
+  margin-left: 73%;
+  margin-top: -12vh;
+}
+
 .text-player {
   color: #fff;
-  font-size: 2.813rem;
+  font-size: 4.6vh;
   margin: 0;
   letter-spacing: 0.09em;
 }

@@ -1,0 +1,119 @@
+.main-player-page {
+  height: 77.8vh;
+  width: 32vw;
+  border-radius: 4.7vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.role-main-player {
+  margin-right: 80%;
+  margin-top: 4vh;
+}
+
+.content-name-player {
+  margin-bottom: 3vh !important;
+  letter-spacing: 0.13em;
+}
+
+
+
+.off-name-player {
+  font-size: 9.9vh;
+  text-align: start;
+  color: #fff;
+  -webkit-text-stroke: 1px grey; /* width and color */
+  text-shadow: 5px 5px 5px #126782;
+  margin-bottom: 0 !important;
+}
+
+.name-player {
+  text-align: start;
+  font-size: 9.9vh;
+  color: #126782;
+  margin: 0 !important;
+}
+
+.inline-flex {
+  display: inline-flex;
+}
+
+.spacing {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+.parkour {
+  color: #126782;
+  font-size: 6.6vh;
+  font-family: 'BigNoodleTitling';
+  letter-spacing: 0.13em;
+}
+
+.social {
+  border-bottom: 5px solid #126782;
+  width: 20%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.link-socials {
+  margin-top: 10vh !important;
+  margin-bottom: 10vh !important;
+}
+
+.info-player {
+  color: #126782;
+  font-size: 3vh;
+  text-transform: uppercase;
+  margin-bottom: 3vh;
+  letter-spacing: 0.13em;
+}
+
+.marginer {
+  margin-bottom: 10vh  !important;
+}
+
+.icon-player {
+  vertical-align: middle;
+  font-size: 5vh;
+}
+
+.coloring {
+  color: #126782;
+  font-size: 3.7vh;
+}
+
+.carrer {
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;  
+}
+
+.name-carrer {
+  font-family: 'BigNoodleTitling';
+  text-align: center;
+  color: #126782;
+  font-size: 9vh;
+  border-bottom: 7px solid #126782;
+  padding: 5vh;
+  margin-left: 7vw;
+}
+
+.img-carrer-nat {
+  margin-left: 5vw;
+  height: 10.7vh;
+}
+
+.logo-old-team {
+  height: 20vh;
+}
+
+.logo-to {
+  margin-top: 7vh;
+  font-size: 5vh;
+}
+
+.big-img-carrer {
+  height: 110vh;
+  width: 32vw;
+}

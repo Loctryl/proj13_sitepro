@@ -52,7 +52,7 @@
     },
     "image": {
       "type": "media",
-      "multiple": false,
+      "multiple": true,
       "required": true,
       "allowedTypes": [
         "images",
@@ -92,6 +92,32 @@
       "relation": "manyToOne",
       "target": "api::team.team",
       "inversedBy": "players"
+    },
+    "height": {
+      "type": "string"
+    },
+    "weight": {
+      "type": "string"
+    },
+    "logo_old_team": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "twitter": {
+      "type": "string"
+    },
+    "insta": {
+      "type": "string"
+    },
+    "twitch": {
+      "type": "string"
     }
   }
 }
