@@ -7,7 +7,7 @@ function Player(props){
     return (
       <>
         <NavBar />
-        ijdbvoizrbok
+        
         <Footer/>
       </>
     )

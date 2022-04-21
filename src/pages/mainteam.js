@@ -15,9 +15,10 @@ export default function MainTeam(props) {
       </div>
       <Row>
         {props.teams.data?.map((team, i) => (
-          <Col key={i} sm={12} md={6} lg={6} className="teamCard">
+          <Col key={i} sm={12} md={6} lg={6}>
             <Link to={'/mainteam/team?id=' + i}>
-              <Image
+              <img
+                className="teamCard"
                 src={"http://localhost:1337" + team.attributes.styled_image.data.attributes.url}
                 alt="Alkya's Team"
               />

@@ -44,22 +44,54 @@
       "default": false,
       "required": true
     },
-    "names": {
+    "coaching": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::team.team",
       "mappedBy": "coach"
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
+      ]
+    },
+    "nationality_img": {
       "type": "media",
       "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "nickname": {
+      "type": "string",
       "required": true
+    },
+    "role": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "team": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::team.team",
+      "inversedBy": "players"
     }
   }
 }

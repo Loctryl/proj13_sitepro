@@ -1,0 +1,29 @@
+.imgCard-players {
+  height: 50vh;
+  width: 16.8vw;
+  border-radius: 5vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.nation-img {
+  height: 5.7vh;
+  margin-left: 73%;
+  margin-top: 7%;
+}
+
+.text-player {
+  color: #fff;
+  font-size: 2.813rem;
+  margin: 0;
+  letter-spacing: 0.09em;
+}
+
+.content-text-player {
+  margin-top: 50%;
+  margin-left: 5%;
+}
+
+.nickname {
+  color: #126782;
+}

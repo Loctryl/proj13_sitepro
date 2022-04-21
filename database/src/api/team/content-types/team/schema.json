@@ -19,13 +19,8 @@
     "players": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::player.player"
-    },
-    "coach": {
-      "type": "relation",
-      "relation": "manyToOne",
       "target": "api::player.player",
-      "inversedBy": "names"
+      "mappedBy": "team"
     },
     "image": {
       "type": "media",
@@ -54,6 +49,12 @@
     },
     "styled_image_alt": {
       "type": "string"
+    },
+    "coach": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::player.player",
+      "inversedBy": "coaching"
     }
   }
 }

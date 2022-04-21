@@ -19,7 +19,7 @@ export default class App extends Component {
       news: [],
       staff: [],
       teams: [],
-      player: []
+      players: []
     }
   }
 
@@ -56,7 +56,7 @@ export default class App extends Component {
             <Route exact path='/aboutus' element={<AboutUs staff={this.state.staff}/>}/>
             <Route exact path='/mainteam' element={<MainTeam teams={this.state.teams}/>}/>
             <Route path='/mainteam/team/player' element={<Player/>}/>
-            <Route path='/mainteam/team' element={<Team teams={this.state.teams}/>}/>
+            <Route path='/mainteam/team' element={<Team players={this.state.players} teams={this.state.teams}/>}/>
             <Route exact path='/shop' element={<Shop/>}/>
           </Routes>
         </Router>

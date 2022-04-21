@@ -1,48 +1,46 @@
 /* team.js */
 .teamBanner {
-    margin: auto;
-    border-radius: 10vw;
-    width: 95%;
-    height: 40vw;
-    margin-bottom: 4vw;
+  margin: auto;
+  border-radius: 6.9vw;
+  width: 70vw;
+  margin-bottom: 4vh;
 }
 
 .line-up {
-    margin-left: 30%;
-    width: 40%;
-    font-size: 7.5vw;
-    border-bottom: 0.22vw solid;
-    border-color: #DFCB7D;
-    margin-bottom: 4vw;
+  margin-left: 30%;
+  width: 40%;
+  font-size: 7.5vw;
+  border-bottom: 0.4vw solid;
+  border-color: #DFCB7D;
+  margin-bottom: 4vh;
 }
 
 .teamH3 {
-    margin-left: 4vw;
-    width: 19%;
-    font-size: 4vw;
-    color: black;
-    text-align: left;
-    border-bottom: 0.22vw solid;
-    border-color: #135066;
-    margin-bottom: 4vw;
+  font-family: 'BigNoodleTitling';
+  margin-left: 4vw;
+  width: 18.17vw;
+  font-size: 4rem;
+  text-align: left;
+  border-bottom: 0.22vw solid;
+  border-color: #135066;
+  margin-bottom: 4vw;
 }
 
 .imgCard {
-    position: absolute;
+  position: absolute;
 }
 
 .playerCard {
-    font-family: 'BigNoodleTitling';
-    font-size: 2vw;
-    text-align: left;
-    color: black;
-    text-shadow: #135066 0.1vw 0.1vw 0.05vw;
-    vertical-align: text-bottom;
-    border-radius: 1vw;
-    margin-left: 4vw;
-    margin-bottom: 4vw;
+  font-family: 'BigNoodleTitling';
+  font-size: 2vw;
+  text-align: left;
+  text-shadow: #135066 0.1vw 0.1vw 0.05vw;
+  vertical-align: text-bottom;
+  border-radius: 1vw;
+  margin-left: 4vw;
+  margin-bottom: 4vw;
 }
 
 .blueOne {
-    color: #135066;
+  color: #135066;
 }
