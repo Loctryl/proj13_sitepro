@@ -1,6 +1,6 @@
 .main-player-page {
   height: 77.8vh;
-  width: 32vw;
+  width: 35vw;
   border-radius: 4.7vh;
   background-size: cover;
   background-repeat: no-repeat;
@@ -15,8 +15,6 @@
   margin-bottom: 3vh !important;
   letter-spacing: 0.13em;
 }
-
-
 
 .off-name-player {
   font-size: 9.9vh;
@@ -116,4 +114,33 @@
 .big-img-carrer {
   height: 110vh;
   width: 32vw;
+}
+
+@media (max-width: 600px) {
+  
+  .main-player-page {
+    width: 100%;
+  }
+  .name-carrer {
+    padding: 0vh 0vh 3vh 0vh !important;
+    margin: 0 !important;
+  }
+
+  .big-img-carrer {
+    width: 100%;
+  }
+
+  .social {
+    width: auto;
+    padding-top: 5vh;
+  }
+
+  .social-icon {
+    padding: 2vh;
+  }
+
+  p {
+    text-align: start !important;
+    padding: 1.5vh;
+  }
 }

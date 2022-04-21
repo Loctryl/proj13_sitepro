@@ -1,7 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faNewspaper, faUserTie, faPeopleGroup, faCartShopping } from "@fortawesome/free-solid-svg-icons";
-import { Offcanvas } from "bootstrap";
-import { Container, Nav, Navbar, NavDropdown, OffcanvasHeader, OffcanvasTitle, OffcanvasBody, Stack } from "react-bootstrap";
+import { Container, Nav, Navbar, OffcanvasHeader, OffcanvasTitle, OffcanvasBody, Stack } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "./navbar.css";
 
@@ -14,7 +13,7 @@ export default function NavBar() {
             <img
               className="logoNavbar"
               src={"http://localhost:1337/uploads/Logo_Colored_PNG_529f0a5229.png?updated_at=2022-04-12T08:59:34.540Z"}
-              alt="ALKYA's Logo"
+              alt="Alkya's Logo"
             />
           </Link>
           <Stack direction="horizontal" gap={5}>
@@ -34,7 +33,7 @@ export default function NavBar() {
                 <img
                   className="logoNavbar"
                   src={"http://localhost:1337/uploads/Logo_Colored_PNG_529f0a5229.png?updated_at=2022-04-12T08:59:34.540Z"}
-                  alt="ALKYA's Logo"
+                  alt="Alkya's Logo"
                 />
               </Link>
             </Navbar.Brand>

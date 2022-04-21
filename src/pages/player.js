@@ -14,12 +14,11 @@ function Player(props) {
   player = player.filter(players => players.id === parseInt(values.id))
   console.log(player[0].attributes.logo_old_team.data);
 
-
   return (
     <>
       <NavBar />
       <Row className="marginer">
-        <Col xs={{ span: 5, offset: 4 }}
+        <Col xs={{ span: 12 }}
           md={{ span: 5, offset: 1 }}
           lg={{ span: 5, offset: 1 }}
           style={{
@@ -35,7 +34,7 @@ function Player(props) {
             : void (0)
           }
         </Col>
-        <Col xs={{ span: 5, offset: 4 }}
+        <Col xs={{ span: 12 }}
           md={{ span: 5, offset: 1 }}
           lg={{ span: 4 }}>
           <Row className="content-name-player">
@@ -75,21 +74,21 @@ function Player(props) {
       <h3 className="parkour social">Ses réseaux</h3>
       <Row className="link-socials">
         <Col xs={12} md={6} lg={3}>
-          <Link to={"/"}><img className="" src={"http://localhost:1337/uploads/twitch_512_1_2ff59f628d.png"} alt="Alkya's players images"></img></Link>
+          <Link to={"/"}><img className="social-icon" src={"http://localhost:1337/uploads/twitch_512_1_2ff59f628d.png"} alt="Alkya's players images"></img></Link>
         </Col>
         <Col xs={12} md={6} lg={3}>
-          <Link to={"/"}><img className="" src={"http://localhost:1337/uploads/logo_rond_twitter_1_f67aac8086.png"} alt="Alkya's players images"></img></Link>
+          <Link to={"/"}><img className="social-icon" src={"http://localhost:1337/uploads/logo_rond_twitter_1_f67aac8086.png"} alt="Alkya's players images"></img></Link>
         </Col>
         <Col xs={12} md={6} lg={3}>
-          <Link to={"/"}><img className="" src={"http://localhost:1337/uploads/2048px_Instagram_icon_1_cc0d704aeb.png"} alt="Alkya's players images"></img></Link>
+          <Link to={"/"}><img className="social-icon" src={"http://localhost:1337/uploads/2048px_Instagram_icon_1_cc0d704aeb.png"} alt="Alkya's players images"></img></Link>
         </Col>
         { player[0].attributes.team.data.attributes.game === "League of Legends" ?
           <Col xs={12} md={6} lg={3}>
-            <Link to={"/"}><img className="" src={"http://localhost:1337/uploads/thumbnail_LOL_14105970c6.png"} alt="Alkya's players images"></img></Link>
+            <Link to={"/"}><img className="social-icon" src={"http://localhost:1337/uploads/thumbnail_LOL_14105970c6.png"} alt="Alkya's players images"></img></Link>
           </Col>
           :player[0].attributes.team.data.attributes.game === "Valorant" ?
           <Col xs={12} md={6} lg={3}>
-            <Link to={"/"}><img className="" src={"http://localhost:1337/uploads/thumbnail_Valo_a1c0776115.jpeg"} alt="Alkya's players images"></img></Link>
+            <Link to={"/"}><img className="social-icon" src={"http://localhost:1337/uploads/thumbnail_Valo_a1c0776115.jpeg"} alt="Alkya's players images"></img></Link>
           </Col>
           :void(0)
         } 

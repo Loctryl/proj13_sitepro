@@ -1,4 +1,4 @@
-import { Col, Container, Image, Row, Stack } from "react-bootstrap";
+import { Col, Container, Row, Stack } from "react-bootstrap";
 import Footer from "../components/menu/footer";
 import NavBar from "../components/menu/navbar";
 import TilesStaff from "../components/tiles/tilesstaff";
@@ -20,8 +20,8 @@ function AboutUs(props) {
       <div>
         <h2>Pourquoi Alkya ?</h2>
         <Stack className="logoWhy" direction="horizontal" gap={5}>
-          <img src={"http://localhost:1337/uploads/Vector_1_e59d1e0399.png"} alt="logo whiteboard"></img>
-          <img src={"http://localhost:1337/uploads/Vector_da271d5e61.png"} alt="logo working tree"></img>
+          <img src={"http://localhost:1337/uploads/Vector_1_e59d1e0399.png"} alt="Alkya logo whiteboard"></img>
+          <img src={"http://localhost:1337/uploads/Vector_da271d5e61.png"} alt="Alkya logo working tree"></img>
         </Stack>
         <Container>
           <p>

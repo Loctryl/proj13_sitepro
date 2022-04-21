@@ -36,7 +36,7 @@ export default function Team(props) {
         <Row>
           {filtercoach.map((player, i) => (
             <Col key={i} sm={6} md={4} lg={3} className="playerCard">
-              <TilesPlayer player={player}/>
+              <Link to={"/mainteam/team/player?id=" + player.id}><TilesPlayer player={player}/></Link>
             </Col>
           ))}
         </Row>
